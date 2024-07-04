@@ -1,32 +1,57 @@
-## Introduction
+# Introduction
 
-The Smart AuTest solution is designed to streamline and automate the testing of WMS (Warehouse Management System) use cases for BY WMS users, eliminating the need for manual intervention. This advanced testing solution supports several types of tests, ensuring a versatile and robust testing environment:
+## What is SmartViu?
 
-1. **MOCA Based Tests**: These tests performed work by MOCA Commands.
+SmartViu is a customized web-based solution designed for Blue Yonder (BY) WMS users. It is designed to simplify screen development for users with no experience in Page Builder, DDAs, and Web screens. SmartViu is a no-code/low-code solution specifically tailored for Blue Yonder WMS users, making the process of screen creation effortless and efficient.
 
-2. **RF Based Tests**: These tests performed work by MTF forms.
+SmartViu streamlines the creation and management of screens, allowing you to focus on optimizing your operations and achieving your business goals.
 
-3. **Web UI Based Tests**: These tests performed work in the WEB UI.
+## Key Features
 
-## Run Sets for End-to-End Scenarios
+- Easy screen development with no coding required.
+- Maintenance screen for managing LES commands.
+- SmartViu screen for viewing and interacting with reports.
+- Role-based access control for report visibility.
+- Enhanced data visualization with grid coloring features based on criteria provided by the user.
 
-Smart AuTest allows you to create custom "Run Sets." These are groups of tests put together to check if everything in your Warehouse Management System (WMS) works well from start to finish. By combining different tests into one sequence, you can make sure that all parts of your system work smoothly together. This helps ensure that your entire workflow and all interactions are functioning correctly.
+# Architectural Overview
 
-## Stress Testing Capabilities
+## High-Level Structure
 
-The solution also supports stress testing, a mode where the system is subjected to simulated stress conditions, such as the simultaneous activity of multiple users. This helps in assessing the system’s performance and stability under heavy load conditions.
+SmartViu is composed of several integrated components that work together to provide a seamless user experience. These components include the user interface (UI) built with Ext JS 4.2, the backend services for handling business logic, and the database for storing and retrieving data. The architecture ensures flexibility and scalability, allowing developers to influence and customize various aspects of the solution.
 
-## Comprehensive Execution Results
+The architecture includes several key components.
 
-The execution results are captured in a comprehensive manner and in addition to that, we can have specific validation logic as well. The results of test executions are meticulously captured, providing detailed insights into each test run. 
+## User Interface (UI) Layer
 
-## Secure Cloud Framework
+- **Front-End Framework:** Built using EXT JS 4.2 for creating rich, interactive web applications.
+- **LES Command Screen:** A maintenance screen providing basic functionalities such as adding reports, deleting, and unassigning a role from a report.
+- **SmartViu Screen:** Displays a list of reports added via the LES Command screen, allowing users to view detailed information and perform actions on the data grids.
 
-The Smart AuTest solution is built on a secure cloud framework that supports tenant-based security, ensuring that data and metadata are protected and isolated per tenant. The execution results are also stored in the cloud, which means the solution can be used without requiring any local installation or footprint. This cloud-based approach enhances accessibility and scalability while maintaining high security standards.
+## Application Layer
 
-## Launching Tests with Smart MOCA Client
+- **Business Logic:** Contains the core functionality and rules of SmartViu.
+- **Report Management Module:** Manages the addition, deletion, and assignment of reports.
+- **Report Viewing and Action Module:** Handles the display and interaction with reports in the SmartViu screen.
+- **Security Module:** Manages user authorization and role-based access control.
 
-To launch the tests, users can use our “Smart MOCA Client”.
+## Data Layer
 
-![](Images/image1.png)
+- **Database:** Stores user data, screen configurations, reports, and application settings.
+- **Data Access Layer:** Manages database interactions and ensures data integrity and security.
 
+# Key Technologies
+
+- **Front-End:** EXT JS 4.2 for building dynamic and responsive user interfaces.
+- **Database:** SQL Server or Oracle for reliable data storage and management.
+- **Language:** MOCA language is used to create scripts for LES commands.
+
+# LES Commands (Main, Detail, and Action)
+
+- **Main Command:** This component defines the primary commands available in SmartViu, such as adding, updating, and deleting LES commands. Developers can customize these commands to meet specific business needs.
+- **Detail Command:** Provides additional details and configurations for each main command. Developers can extend these details to capture more granular information.
+- **Action Command:** Defines the actions that can be performed on the data within SmartViu, such as running specific reports or executing tasks. Developers can add new actions or modify existing ones to enhance functionality.
+
+## Security
+
+Security in SmartViu is managed through role-based access control. Each LES command can be assigned specific roles, ensuring that only authorized users can access certain reports and functionalities. Users can define new roles from standard Blue Yonder configuration, assign permissions, and manage user access to maintain a secure environment.
