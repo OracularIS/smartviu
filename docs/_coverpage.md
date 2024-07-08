@@ -1,4 +1,4 @@
-![logo](Images/image1.png)
+![logo](https://github.com/OracularIS/smartviu)
 
 # SmartViu <small>
 
