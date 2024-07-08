@@ -1,5 +1,4 @@
-![logo](https://github.com/OracularIS/smartviu)
-![image](https://github.com/OracularIS/smartviu/assets/161841391/b775859f-e343-4a2f-981a-3d721c1b1b52)
+![logo](https://github.com/OracularIS/smartviu/assets/161841391/b775859f-e343-4a2f-981a-3d721c1b1b52)
 
 # SmartViu <small>
 
