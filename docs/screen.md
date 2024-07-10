@@ -31,7 +31,7 @@ Click on the "Find" button to load the report data in the grid, or you can fill 
 
 ![](Images/fig11.png)
 
-User can also add frequently used reports to favorite reports, by clicking star button. Those reports will show in favorite reports after clear the data.
+Users can also add frequently used reports to favorite reports, by clicking the star button. Those reports will show in favorite reports after clearing the data. 
 
 ![](Images/fig8a.png)
 
