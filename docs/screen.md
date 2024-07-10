@@ -20,12 +20,6 @@ Upon clicking the Report List lookup, a new popup window opens, and the user can
 
 ![](Images/fig8.png)
 
-User can also add frequently used reports to favorite reports, by clicking star button. Those reports will show in favorite reports after clear the data.
-
-![](Images/fig8a.png)
-
-![](Images/fig8b.png)
-
 Select a report from the available report list, and input fields will be created for that report.
 ![](Images/fig9.png)
 
@@ -37,6 +31,11 @@ Click on the "Find" button to load the report data in the grid, or you can fill 
 
 ![](Images/fig11.png)
 
+User can also add frequently used reports to favorite reports, by clicking star button. Those reports will show in favorite reports after clear the data.
+
+![](Images/fig8a.png)
+
+![](Images/fig8b.png)
 
 ## View and Process Detailed Actions
 
