@@ -16,7 +16,7 @@ Upon clicking the absolute group, the user can see all the available absolute gr
 
 ![](Images/fig7a.png)
 
-Upon clicking the Report List lookup, a new popup window opens, and the user can see the available report list that are tied to selected absolute group.
+Upon clicking the Report List lookup, a new popup window opens, and the user can see the available report list.
 
 ![](Images/fig8.png)
 
@@ -36,10 +36,6 @@ Select a report from the available report list, and input fields will be created
 Click on the "Find" button to load the report data in the grid, or you can fill out input fields to find data based on the given input parameters.
 
 ![](Images/fig11.png)
-
-Click on "Help" button for user guide.
-
-![](Images/fig11a.png)
 
 
 ## View and Process Detailed Actions
@@ -146,3 +142,4 @@ Some action buttons are available on the top menu of the SmartViu screen.
 - **Find**: The “Find” button is used to load the main report data into the grid. This functionality allows you to easily view the data for a selected report.
 - **Clear**: The “Clear” button is used to remove all data from the SmartViu screen and reload the entire screen. This functionality helps in resetting the view and starting fresh.
 - **Export All**: The “Export” button allows you to export the data from the main grid into a CSV file. This functionality is useful for saving data locally and sharing or analyzing it in other applications.
+- **Help**: The “Help” button is used for user guide.
