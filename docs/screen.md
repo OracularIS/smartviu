@@ -6,14 +6,25 @@ The SmartViu screen is designed for end-users to easily view and work with the r
 
 To view the report list in SmartViu:
 
-1. Click on the Report List lookup that will show the available reports for the respective user. 
-2. Users can only view those reports which they are authorized to see. For example, if an LES command is assigned a SUPER role, the user can see the report in the lookup field popup window only if the user has the SUPER role assigned.
+1. Click on absolute group, this will show all the groups that are defined. 
+2. Click on the Report List lookup that will show the available reports of selected absolute group for the respective user. For example if user select INB absolute group, it will show all the reports lists related to INB. 
+3. Users can only view those reports which they are authorized to see. For example, if an LES command is assigned a SUPER role, the user can see the report in the lookup field popup window only if the user has the SUPER role assigned.
 
 ![](Images/fig7.png)
 
-Upon clicking the Report List lookup, a new popup window opens, and the user can see the available report list.
+Upon clicking the absolute group, the user can see all the available absolute group.
+
+![](Images/fig7a.png)
+
+Upon clicking the Report List lookup, a new popup window opens, and the user can see the available report list that are tied to selected absolute group.
 
 ![](Images/fig8.png)
+
+User can also add frequently used reports to favorite reports, by clicking star button. Those reports will show in favorite reports after clear the data.
+
+![](Images/fig8a.png)
+
+![](Images/fig8b.png)
 
 Select a report from the available report list, and input fields will be created for that report.
 ![](Images/fig9.png)
@@ -25,6 +36,11 @@ Select a report from the available report list, and input fields will be created
 Click on the "Find" button to load the report data in the grid, or you can fill out input fields to find data based on the given input parameters.
 
 ![](Images/fig11.png)
+
+Click on "Help" button for user guide.
+
+![](Images/fig11a.png)
+
 
 ## View and Process Detailed Actions
 
