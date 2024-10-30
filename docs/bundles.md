@@ -44,7 +44,52 @@ Action commands are specific instructions associated with main commands. They de
 
 ![](Images/fig4.png)
 
-## CRUD Functionalities
+#### Add New Fields
+
+If there a new field needed to be added in any LES Command Maintenance screen, It’s data must be added in the below tables. A field’s type must be specified i.e Combo Box, Date/Time or Flag.
+ - les_var_config
+ - les_lkp
+ - les_var_vp
+
+1. In les_var_config table a field name, description and its type must be defined. If a field with the name “tray_box” is required, its data must be added in the “les_var_config” table like given below.
+
+    ![](Images/fig47.png)
+
+2.	ii.	In les_var_vp table a Lookup ID is created in lkp_id column.  User has to insert record in les_var_vp table manually as shown in the below screenshot.
+
+    ![](Images/fig47a.png)
+
+3. iii.	In les_lkp table a command or SQL statement must be created for that field in lkp_cmd column against relevant lkp_id as given below.
+
+    ![](Images/fig47b.png)
+
+Below is the SQL statement which has been added in “lkp_cmd” column of “les_lkp” table.
+
+![](Images/fig47c.png)
+
+
+Lookup Field is shown in Smart Viu.
+
+![](Images/fig47d.png)
+
+#### Multi Selection
+Multi selection is applicable in Smart Viu on Drop-down field. If user wants to add a report which consists of multi selections, there are some changes need to be made in LES Command script. Below is an example of Multi selection.
+
+![](Images/fig48.png)
+
+In the below screenshot multi selection is shown on Smart Viu. Click on Find button.
+
+![](Images/fig48a.png)
+
+When user clicks on Find the data is displayed in the main grid for relevant selected record.
+
+![](Images/fig48b.png)
+
+
+
+
+
+### CRUD Functionalities
 
 ### Add New LES Command
 
