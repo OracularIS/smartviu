@@ -9,4 +9,4 @@
 - **User-Friendly Interface**: Designed to make screen development effortless and efficient, SmartViu ensures users can easily manage and interact with reports and data.
 
 
-[User Guide](./readme.md)
+[Documentation](./readme.md)
