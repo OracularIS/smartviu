@@ -24,16 +24,17 @@ In the Maintenance Screen, LES commands are defined and managed. These commands 
 
 Users need to follow the below format when writing for all three main, action, and detail LES Commands.
 
- <img src="./Attachments/Bundles/LES_Cmd_Script.png" alt="undirectedmenu" style="height: 200px;margin:auto;display:block">
+ <img src="./Attachments/Bundles/LES_Cmd_Script.png" alt="undirectedmenu" style="height:height: 350px; width :500px ;margin:auto;display:block">
 
 #### Main Commands
 
 Main commands are the primary instructions used to manage LES commands within SmartViu. Users must define the main command with the above-mentioned format. Users also follow the format for defining each main command ID such as `<Main-CMD>`.
 
-<img src="./Attachments/Bundles/Main_Command.png" alt="undirectedmenu" style="height: 200px;margin:auto;display:block">
+<img src="./Attachments/Bundles/Main_Command.png" alt="undirectedmenu" style="height: 350px; width :500px ;margin:auto;display:block">
 </br>
-- **LES Main Command To Display Inventory**
- 
+
+**LES Main Command To Display Inventory**
+
 ```sql
 publish data 
 where wh_id = @wh_id
@@ -99,15 +100,16 @@ and limit = nvl(@limit,100000000000)
 	@getcolclause:raw
 	]catch (-1403,510)
 }  
-```  
+```
 
 #### Detail Commands
 
 Detail commands provide additional configuration and details for each main command. They extend the functionality and customization of main commands. The format for a detail command ID is typically `<Main-CMD>-D-1`, `<Main-CMD>-D-2`.
 
-<img src="./Attachments/Bundles/Dtl_Command.png" alt="undirectedmenu" style="height: 200px;margin:auto;display:block">
+<img src="./Attachments/Bundles/Dtl_Command.png" alt="undirectedmenu" style="height: 350px; width :500px ;margin:auto;display:block">
 </br>
-- **LES Detail Command **
+
+**LES Detail Command**
 
 ``` sql
 publish data 
@@ -154,10 +156,10 @@ and @+locmst.stoloc
 
 Action commands are specific instructions associated with main commands. They define the actions that can be performed on the data. The format for an action command ID is typically `<Main-CMD>-A-1`, `<Main-CMD>-A-2`.
 
-<img src="./Attachments/Bundles/Action_Command.png" alt="undirectedmenu" style="height: 200px;margin:auto;display:block">
+<img src="./Attachments/Bundles/Action_Command.png" alt="undirectedmenu" style="height: 350px; width :500px ;margin:auto;display:block">
 </br>
 
-- **LES Action Command **
+**LES Action Command**
 
 ```sql
 publish data 
@@ -221,9 +223,11 @@ Ordnum: Column name is used for hyperlink
 usr_ossi_test_ord_newn: Main LES Command ID 
 
 H-1: It represents the first Hyperlink  
-<img src="./Attachments/Bundles/HyperLink_Command.png" alt="undirectedmenu" style="height: 200px;margin:auto;display:block">
+<img src="./Attachments/Bundles/HyperLink_Command.png" alt="undirectedmenu" style="height: 350px; width :500px ; width :px ;margin:auto;display:block">
 </br>
-- **LES HyperLink Command **
+
+**LES HyperLink Command**
+
 ```sql
 publish data 
   where btcust = @btcust 
@@ -257,39 +261,39 @@ If there a new field needed to be added in any LES Command Maintenance screen, I
 
 1. In les_var_config table a field name, description and its type must be defined. If a field with the name “tray_box” is required, its data must be added in the “les_var_config” table like given below.
 
-   <img src="./Attachments/Bundles/LES_Cmd_Tbl1.png" alt="undirectedmenu" style="height: 70px;margin:auto;display:block">
+   <img src="./Attachments/Bundles/LES_Cmd_Tbl1.png" alt="undirectedmenu" style="height: 70px; width:500px;margin:auto;display:block">
 </br>
 
 2.	ii.	In les_var_vp table a Lookup ID is created in lkp_id column.  User has to insert record in les_var_vp table manually as shown in the below screenshot.
 
-    <img src="./Attachments/Bundles/LES_Cmd_Tbl2.png" alt="undirectedmenu" style="height: 70px;margin:auto;display:block">
+    <img src="./Attachments/Bundles/LES_Cmd_Tbl2.png" alt="undirectedmenu" style="height: 70px; width:500px;margin:auto;display:block">
 </br>
 
 3. iii.	In les_lkp table a command or SQL statement must be created for that field in lkp_cmd column against relevant lkp_id as given below.
 
-   <img src="./Attachments/Bundles/LES_Cmd_Tbl3.png" alt="undirectedmenu" style="height: 70px;margin:auto;display:block">
+   <img src="./Attachments/Bundles/LES_Cmd_Tbl3.png" alt="undirectedmenu" style="height: 70px; width:500px;margin:auto;display:block">
 </br>
 
 Below is the SQL statement which has been added in “lkp_cmd” column of “les_lkp” table.
 
-<img src="./Attachments/Bundles/Lkp_Cmd_SQL.png" alt="undirectedmenu" style="height: 100px;margin:auto;display:block">
+<img src="./Attachments/Bundles/Lkp_Cmd_SQL.png" alt="undirectedmenu" style="height: 120px; width :500px ;margin:auto;display:block">
 </br>
 
 
 Lookup Field is shown in Smart Viu.
 
-<img src="./Attachments/Bundles/Lkp_Fields.png" alt="undirectedmenu" style="height: 150px;margin:auto;display:block">
+<img src="./Attachments/Bundles/Lkp_Fields.png" alt="undirectedmenu" style="height: 160px; width :500px ;margin:auto;display:block">
 </br>
 
 #### Multi Selection
 Multi selection is applicable in Smart Viu on Drop-down field. If user wants to add a report which consists of multi selections, there are some changes need to be made in LES Command script. Below is an example of Multi selection.
 
-<img src="./Attachments/Bundles/Multi_Selection.png" alt="undirectedmenu" style="height: 150px;margin:auto;display:block">
+<img src="./Attachments/Bundles/Multi_Selection.png" alt="undirectedmenu" style="height: 350px; width:500px;margin:auto;display:block">
 </br>
 
 In the below screenshot multi selection is shown on Smart Viu. Click on Find button.
 
-<img src="./Attachments/Bundles/Multi_Selection_Grid_view.png" alt="undirectedmenu" style="height: 200px;margin:auto;display:block">
+<img src="./Attachments/Bundles/Multi_Selection_Grid_view.png" alt="undirectedmenu" style="height: 350px; width:500px;margin:auto;display:block">
 </br>
 There are some changes need to be made in LES Command script for Multi Selection. 
 
@@ -337,10 +341,10 @@ else if(instr(@trlr_stat,','))
 4. Write the MOCA Script in the local syntax field and make sure you follow the format for writing the script for LES Commands.
 5. Click on the "Save" button to add the LES Command.
 
-<img src="./Attachments/Bundles/Add_LES_Cmd1.png" alt="undirectedmenu" style="height: 200px;margin:auto;display:block">
+<img src="./Attachments/Bundles/Add_LES_Cmd1.png" alt="undirectedmenu" style="height: 350px; width:500px;margin:auto;display:block">
 </br>
 
-<img src="./Attachments/Bundles/Add_LES_Cmd2.png" alt="undirectedmenu" style="height: 200px;margin:auto;display:block">
+<img src="./Attachments/Bundles/Add_LES_Cmd2.png" alt="undirectedmenu" style="height: 350px; width:500px;margin:auto;display:block">
 </br>
 
 
