@@ -3,3 +3,4 @@
 - [Getting Started](./GettingSmartViu.md)
 - [SmartViu Bundles](./bundles.md)
 - [SmartViu Screens](./screen.md)
+- [SmartViu FAQ](./FAQ.md)
