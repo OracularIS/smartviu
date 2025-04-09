@@ -7,7 +7,7 @@ The SmartViu screen is designed for end-users to easily view and work with the r
 ## View Report List and Report Data
 
 To view the report list in SmartViu:
-
+as
 1. Click on the Reports Filter drop-down or Reports Tree that will show the available reports. 
 2. Users can only view those reports which they are authorized to see. For example, if an LES command is assigned a SUPER role, the user can see the report in the Reports Filter drop-down field or Reports Tree only if the user has the SUPER role assigned.
 
