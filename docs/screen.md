@@ -7,16 +7,17 @@ The SmartViu screen is designed for end-users to easily view and work with the r
 ## View Report List and Report Data
 
 To view the report list in SmartViu:
-as
+
 1. Click on the Reports Filter drop-down or Reports Tree that will show the available reports. 
 2. Users can only view those reports which they are authorized to see. For example, if an LES command is assigned a SUPER role, the user can see the report in the Reports Filter drop-down field or Reports Tree only if the user has the SUPER role assigned.
 
-    <img src="./Attachments/Screen/Reports_Tree.png" alt="undirectedmenu" style="height: 250px; width:500px;margin:auto;display:block">
+<img src="./Attachments/Screen/Reports_Tree.png" alt="undirectedmenu" style="height: 250px; width:500px;margin:auto;display:block">
 </br>
 
 3. Select a report from the available report list, and input fields will be drawn dynamically for that report.
 
-   <img src="./Attachments/Screen/Report_list.png" alt="undirectedmenu" style="height: 250px; width:500px;margin:auto;display:block">
+<img src="./Attachments/Screen/Report_List.png"
+alt="undirectedmenu" style="height: 250px; width:500px;margin:auto;display:block">
 </br>
 
 *Note: These input fields are created for each LES command based on the publish statement at the top of the MOCA script.*
@@ -26,7 +27,8 @@ as
 
 4. Click on the "Find" button to load the report data in the grid, or you can fill out input fields to find data based on the given input parameters.
 
-   <img src="./Attachments/Screen/Report_Data_Grid.png" alt="undirectedmenu" style="height: 250px; width:500px;margin:auto;display:block">
+
+<img src="./Attachments/Screen/Report_Data_Grid.png" alt="undirectedmenu" style="height: 250px; width:500px;margin:auto;display:block">
 </br>
 
 Users can also add frequently used reports to favorite reports, by clicking the star button. Those reports will show in favorite reports after clearing the data. 
@@ -34,7 +36,7 @@ Users can also add frequently used reports to favorite reports, by clicking the 
 <img src="./Attachments/Screen/Fvrt_Report1.png" alt="undirectedmenu" style="height: 200px; width:500px;margin:auto;display:block">
 </br>
 
-<img src="./Attachments/Screen/Fvrt_Report2.png" alt="undirectedmenu" style="height: 200px; width:4500px;margin:auto;display:block">
+<img src="./Attachments/Screen/Fvrt_Report2.png" alt="undirectedmenu" style="height: 200px; width:500px;margin:auto;display:block">
 </br>
 
 ## View and Process Detailed Actions
@@ -44,7 +46,7 @@ To view and process detailed actions for a record:
 1. Navigate to the main grid and select the record you wish to view details for by clicking on it.
 2. After selecting the record, choose the detail report from the "Select Detail Action" lookup field. A popup window will appear; select any detail report from the list, and it will display the detail/child grid of the selected record.
 
-    <img src="./Attachments/Screen/Dtl_Cmd_field.png" alt="undirectedmenu" style="height: 200px; width:500px;margin:auto;display:block">
+<img src="./Attachments/Screen/Dtl_Cmd_field.png" alt="undirectedmenu" style="height: 200px; width:500px;margin:auto;display:block">
 </br>
 
 Choose an action: By default, the first action in the Detail Action lookup is selected. If you wish to perform a different action, select it from the action lookup available list.
@@ -59,7 +61,7 @@ The Grid Action Lookup allows you to perform various actions on selected data fr
 1. Navigate to the main grid and select the record you wish to perform an action on by clicking on them.
 2. Area below the grid is used for actions buttons. If the selected record needs to be processed as Move inventory, then select the below button “Move Inventory Process” button or to the record need to be deleted select “Purged WMS Inventory” button.
 
-    <img src="./Attachments/Screen/Action_Fields1.png" alt="undirectedmenu" style="height: 250px; width:500px;margin:auto;display:block">
+<img src="./Attachments/Screen/Action_Fields1.png" alt="undirectedmenu" style="height: 250px; width:500px;margin:auto;display:block">
 </br>
 
 A new pop-up window will open. Here, you need to provide the required input parameters to perform the selected action. For example, if you want to move inventory, you will need to provide the destination load and destination location where the inventory will be moved.
@@ -72,12 +74,12 @@ After providing the necessary information, confirm and execute the action by cli
 
 1. Select and open the report for which Hyperlink is created. Click on Find button to show the data.
 
-      <img src="./Attachments/Screen/Hyperlink_Grid1.png" alt="undirectedmenu" style="height: 200px; width:500px;margin:auto;display:block">
+<img src="./Attachments/Screen/Hyperlink_Grid1.png" alt="undirectedmenu" style="height: 200px; width:500px;margin:auto;display:block">
 </br>
 
 2. If click on any value, it will show another popup page containing a grid with data.
 
-      <img src="./Attachments/Screen/Hyperlink_Grid2.png" alt="undirectedmenu" style="height: 240px; width:500px;margin:auto;display:block">
+<img src="./Attachments/Screen/Hyperlink_grid2.png" alt="undirectedmenu" style="height: 240px; width:500px;margin:auto;display:block">
 </br> 
 
 ## Grid Coloring Functionality
@@ -89,12 +91,12 @@ To apply grid coloring:
 1. Select a record from the main grid.
 2. Click on the “Color Config Window” button.
 
-   <img src="./Attachments/Screen/Color_Config_window1.png" alt="undirectedmenu" style="height: 150px; width:500px;margin:auto;display:block">
+<img src="./Attachments/Screen/Color_Config_window1.png" alt="undirectedmenu" style="height: 150px; width:500px;margin:auto;display:block">
 </br> 
 
 A new pop-up window will open where you can define the criteria for applying color coding to the grid.
 
- <img src="./Attachments/Screen/Color_Config_window2.png" alt="undirectedmenu" style="height: 200px; width:500px;margin:auto;display:block">
+<img src="./Attachments/Screen/Color_Config_window2.png" alt="undirectedmenu" style="height: 200px; width:500px;margin:auto;display:block">
 </br> 
 
 In the pop-up window, you can add, update, or delete criteria for grid coloring using the respective buttons:
@@ -170,11 +172,11 @@ Some action buttons are available on the top menu of the SmartViu screen.
 
 6. Criteria is created in the below screen. Click on Confirm button to apply the criteria.
 
-     <img src="./Attachments/Screen/Aggregate_Func_Criteria2..png" alt="undirectedmenu" style="height: 200px;margin:auto;display:block">
+     <img src="./Attachments/Screen/Aggregate_Func_Criteria2..png" alt="undirectedmenu" style="height: 200px;width: 500px; margin:auto;display:block">
 </br> 
 
 7. When Confirm button is clicked. Criteria will be applied. In Gid Total the count and total is calculated.
 
-     <img src="./Attachments/Screen/Aggregate_Total.png" alt="undirectedmenu" style="height: 200px;margin:auto;display:block">
+     <img src="./Attachments/Screen/Aggregate_Total.png" alt="undirectedmenu" style="height: 200px;width: 500px;margin:auto;display:block">
 </br> 
 
