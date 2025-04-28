@@ -41,19 +41,19 @@ Following the correct format for these commands ensures optimal performance and 
 
 
 
- <img src="./Attachments/Bundles/LES_Cmd_Script.png" alt="undirectedmenu" style="height:height: 350px; width :500px ;margin:auto;display:block; cursor: zoom-in; 
-              border: 2px solid #000000; border-radius: 4px;"
-              onclick="this.style.height='400px'; this.style.cursor='zoom-out';" 
-       ondblclick="this.style.height='200px'; this.style.cursor='zoom-in';">
+<img src="./Attachments/Bundles/LES_Cmd_Script.png" alt="undirectedmenu" style="height:height: 350px; width :500px ;margin:auto;display:block; cursor: zoom-in; 
+border: 2px solid #000000; border-radius: 4px;"
+onclick="this.style.height='400px'; this.style.cursor='zoom-out';" 
+ondblclick="this.style.height='200px'; this.style.cursor='zoom-in';">
 
 #### Main Commands
 
 Main commands are the primary instructions used to manage LES commands within SmartViu. Users must define the main command with the above-mentioned format. Users also follow the format for defining each main command ID such as `<Main-CMD>`.
 
 <img src="./Attachments/Bundles/Main_Command.png" alt="undirectedmenu" style="height: 300px; width :500px ;margin:auto;display:block; cursor: zoom-in; 
-              border: 2px solid #000000; border-radius: 4px;"
-              onclick="this.style.height='400px'; this.style.cursor='zoom-out';" 
-       ondblclick="this.style.height='200px'; this.style.cursor='zoom-in';">
+border: 2px solid #000000; border-radius: 4px;"
+onclick="this.style.height='400px'; this.style.cursor='zoom-out';" 
+ondblclick="this.style.height='200px'; this.style.cursor='zoom-in';">
 </br>
 
 **LES Main Command To Display Inventory**
@@ -130,9 +130,9 @@ and limit = nvl(@limit,100000000000)
 Detail commands provide additional configuration and details for each main command. They extend the functionality and customization of main commands. The format for a detail command ID is typically `<Main-CMD>-D-1`, `<Main-CMD>-D-2`.
 
 <img src="./Attachments/Bundles/Dtl_Command.png" alt="undirectedmenu" style="height: 300px; width :500px ;margin:auto;display:block; cursor: zoom-in; 
-              border: 2px solid #000000; border-radius: 4px;"
-              onclick="this.style.height='400px'; this.style.cursor='zoom-out';" 
-       ondblclick="this.style.height='200px'; this.style.cursor='zoom-in';">
+border: 2px solid #000000; border-radius: 4px;"
+onclick="this.style.height='400px'; this.style.cursor='zoom-out';" 
+ondblclick="this.style.height='200px'; this.style.cursor='zoom-in';">
 </br>
 
 **LES Detail Command**
@@ -183,9 +183,9 @@ and @+locmst.stoloc
 Action commands are specific instructions associated with main commands. They define the actions that can be performed on the data. The format for an action command ID is typically `<Main-CMD>-A-1`, `<Main-CMD>-A-2`.
 
 <img src="./Attachments/Bundles/Action_Command.png" alt="undirectedmenu" style="height: 300px; width :500px ;margin:auto;display:block; cursor: zoom-in; 
-              border: 2px solid #000000; border-radius: 4px;"
-              onclick="this.style.height='400px'; this.style.cursor='zoom-out';" 
-       ondblclick="this.style.height='200px'; this.style.cursor='zoom-in';">
+border: 2px solid #000000; border-radius: 4px;"
+onclick="this.style.height='400px'; this.style.cursor='zoom-out';" 
+ondblclick="this.style.height='200px'; this.style.cursor='zoom-in';">
 </br>
 
 **LES Action Command**
@@ -253,9 +253,9 @@ usr_ossi_test_ord_newn: Main LES Command ID
 
 H-1: It represents the first Hyperlink  
 <img src="./Attachments/Bundles/HyperLink_Command.png" alt="undirectedmenu" style="height: 300px; width :500px ; width :px ;margin:auto;display:block;cursor: zoom-in; 
-              border: 2px solid #000000; border-radius: 4px;"
-              onclick="this.style.height='400px'; this.style.cursor='zoom-out';" 
-       ondblclick="this.style.height='200px'; this.style.cursor='zoom-in';">
+border: 2px solid #000000; border-radius: 4px;"
+onclick="this.style.height='400px'; this.style.cursor='zoom-out';" 
+ondblclick="this.style.height='200px'; this.style.cursor='zoom-in';">
 </br>
 
 **LES HyperLink Command**
@@ -293,60 +293,60 @@ If there a new field needed to be added in any LES Command Maintenance screen, I
 
 1. In les_var_config table a field name, description and its type must be defined. If a field with the name “tray_box” is required, its data must be added in the “les_var_config” table like given below.
 
-   <img src="./Attachments/Bundles/LES_Cmd_Tbl1.png" alt="undirectedmenu" style="height: 70px; width:500px;margin:auto;display:block; cursor: zoom-in; 
-              border: 2px solid #000000; border-radius: 4px;"
-              onclick="this.style.height='400px'; this.style.cursor='zoom-out';" 
-       ondblclick="this.style.height='200px'; this.style.cursor='zoom-in';">
+<img src="./Attachments/Bundles/LES_Cmd_Tbl1.png" alt="undirectedmenu" style="height: 70px; width:500px;margin:auto;display:block; cursor: zoom-in; 
+border: 2px solid #000000; border-radius: 4px;"
+onclick="this.style.height='400px'; this.style.cursor='zoom-out';" 
+ondblclick="this.style.height='200px'; this.style.cursor='zoom-in';">
 </br>
 
 2.	In les_var_vp table a Lookup ID is created in lkp_id column.  User has to insert record in les_var_vp table manually as shown in the below screenshot.
 
-    <img src="./Attachments/Bundles/LES_Cmd_Tbl2.png" alt="undirectedmenu" style="height: 70px; width:500px;margin:auto;display:block; cursor: zoom-in; 
-              border: 2px solid #000000; border-radius: 4px;"
-              onclick="this.style.height='400px'; this.style.cursor='zoom-out';" 
-       ondblclick="this.style.height='200px'; this.style.cursor='zoom-in';">
+<img src="./Attachments/Bundles/LES_Cmd_Tbl2.png" alt="undirectedmenu" style="height: 70px; width:500px;margin:auto;display:block; cursor: zoom-in; 
+border: 2px solid #000000; border-radius: 4px;"
+onclick="this.style.height='400px'; this.style.cursor='zoom-out';" 
+ondblclick="this.style.height='200px'; this.style.cursor='zoom-in';">
 </br>
 
 3. In les_lkp table a command or SQL statement must be created for that field in lkp_cmd column against relevant lkp_id as given below.
 
-   <img src="./Attachments/Bundles/LES_Cmd_Tbl3.png" alt="undirectedmenu" style="height: 70px; width:500px;margin:auto;display:block; cursor: zoom-in; 
-              border: 2px solid #000000; border-radius: 4px;"
-              onclick="this.style.height='400px'; this.style.cursor='zoom-out';" 
-       ondblclick="this.style.height='200px'; this.style.cursor='zoom-in';">
+<img src="./Attachments/Bundles/LES_Cmd_Tbl3.png" alt="undirectedmenu" style="height: 70px; width:500px;margin:auto;display:block; cursor: zoom-in; 
+border: 2px solid #000000; border-radius: 4px;"
+onclick="this.style.height='400px'; this.style.cursor='zoom-out';" 
+ondblclick="this.style.height='200px'; this.style.cursor='zoom-in';">
 </br>
 
 Below is the SQL statement which has been added in “lkp_cmd” column of “les_lkp” table.
 
 <img src="./Attachments/Bundles/Lkp_Cmd_SQL.png" alt="undirectedmenu" style="height: 120px; width :500px ;margin:auto;display:block; cursor: zoom-in; 
-              border: 2px solid #000000; border-radius: 4px;"
-              onclick="this.style.height='400px'; this.style.cursor='zoom-out';" 
-       ondblclick="this.style.height='200px'; this.style.cursor='zoom-in';">
+border: 2px solid #000000; border-radius: 4px;"
+onclick="this.style.height='400px'; this.style.cursor='zoom-out';" 
+ondblclick="this.style.height='200px'; this.style.cursor='zoom-in';">
 </br>
 
 
 Lookup Field is shown in Smart Viu.
 
 <img src="./Attachments/Bundles/Lkp_Fields.png" alt="undirectedmenu" style="height: 160px; width :500px ;margin:auto;display:block; cursor: zoom-in; 
-              border: 2px solid #000000; border-radius: 4px;"
-              onclick="this.style.height='400px'; this.style.cursor='zoom-out';" 
-       ondblclick="this.style.height='200px'; this.style.cursor='zoom-in';">
+border: 2px solid #000000; border-radius: 4px;"
+onclick="this.style.height='400px'; this.style.cursor='zoom-out';" 
+ondblclick="this.style.height='200px'; this.style.cursor='zoom-in';">
 </br>
 
 #### Multi Selection
-Multi selection is applicable in Smart Viu on Drop-down field. If user wants to add a report which consists of multi selections, there are some changes need to be made in LES Command script. Below is an example of Multi selection.
+Multi-selection is supported in SmartViu for drop-down fields. If a user wants to add a report that includes multiple selections, some changes need to be made in the LES Command script. Below is an example of multi-selection.
 
 <img src="./Attachments/Bundles/Multi_Selection.png" alt="undirectedmenu" style="height: 250px; width:500px;margin:auto;display:block; cursor: zoom-in; 
-              border: 2px solid #000000; border-radius: 4px;"
-              onclick="this.style.height='400px'; this.style.cursor='zoom-out';" 
-       ondblclick="this.style.height='200px'; this.style.cursor='zoom-in';">
+border: 2px solid #000000; border-radius: 4px;"
+onclick="this.style.height='400px'; this.style.cursor='zoom-out';" 
+ondblclick="this.style.height='200px'; this.style.cursor='zoom-in';">
 </br>
 
 In the below screenshot multi selection is shown on Smart Viu. Click on Find button.
 
 <img src="./Attachments/Bundles/Multi_Selection_Grid_view.png" alt="undirectedmenu" style="height: 250px; width:500px;margin:auto;display:block; cursor: zoom-in; 
-              border: 2px solid #000000; border-radius: 4px;"
-              onclick="this.style.height='400px'; this.style.cursor='zoom-out';" 
-       ondblclick="this.style.height='200px'; this.style.cursor='zoom-in';">
+border: 2px solid #000000; border-radius: 4px;"
+onclick="this.style.height='400px'; this.style.cursor='zoom-out';" 
+ondblclick="this.style.height='200px'; this.style.cursor='zoom-in';">
 </br>
 There are some changes need to be made in LES Command script for Multi Selection. 
 
@@ -395,15 +395,15 @@ else if(instr(@trlr_stat,','))
 5. Click on the "Save" button to add the LES Command.
 
 <img src="./Attachments/Bundles/Add_LES_Cmd1.png" alt="undirectedmenu" style="height: 250px; width:500px;margin:auto;display:block; cursor: zoom-in; 
-              border: 2px solid #000000; border-radius: 4px;"
-              onclick="this.style.height='400px'; this.style.cursor='zoom-out';" 
-       ondblclick="this.style.height='200px'; this.style.cursor='zoom-in';">
+border: 2px solid #000000; border-radius: 4px;"
+onclick="this.style.height='400px'; this.style.cursor='zoom-out';" 
+ondblclick="this.style.height='200px'; this.style.cursor='zoom-in';">
 </br>
 
 <img src="./Attachments/Bundles/Add_LES_Cmd2.png" alt="undirectedmenu" style="height: 250px; width:500px;margin:auto;display:block; cursor: zoom-in; 
-              border: 2px solid #000000; border-radius: 4px;"
-              onclick="this.style.height='400px'; this.style.cursor='zoom-out';" 
-       ondblclick="this.style.height='200px'; this.style.cursor='zoom-in';">
+border: 2px solid #000000; border-radius: 4px;"
+onclick="this.style.height='400px'; this.style.cursor='zoom-out';" 
+ondblclick="this.style.height='200px'; this.style.cursor='zoom-in';">
 </br>
 
 
@@ -416,9 +416,9 @@ else if(instr(@trlr_stat,','))
 
 <img src="./Attachments/Bundles/Delete.png"
 alt="undirectedmenu" style="height: 250px; width:500px;margin:auto;display:block; cursor: zoom-in; 
-              border: 2px solid #000000; border-radius: 4px;"
-              onclick="this.style.height='400px'; this.style.cursor='zoom-out';" 
-       ondblclick="this.style.height='200px'; this.style.cursor='zoom-in';" >
+border: 2px solid #000000; border-radius: 4px;"
+onclick="this.style.height='400px'; this.style.cursor='zoom-out';" 
+ondblclick="this.style.height='200px'; this.style.cursor='zoom-in';" >
 
 ### Update LES Command
 
@@ -428,9 +428,9 @@ alt="undirectedmenu" style="height: 250px; width:500px;margin:auto;display:block
 
 <img src="./Attachments/Bundles/Edit.png"
 alt="undirectedmenu" style="height: 250px; width:500px;margin:auto;display:block; cursor: zoom-in; 
-              border: 2px solid #000000; border-radius: 4px;"
-              onclick="this.style.height='400px'; this.style.cursor='zoom-out';" 
-       ondblclick="this.style.height='200px'; this.style.cursor='zoom-in';">
+border: 2px solid #000000; border-radius: 4px;"
+onclick="this.style.height='400px'; this.style.cursor='zoom-out';" 
+ondblclick="this.style.height='200px'; this.style.cursor='zoom-in';">
 
 ### Unassign Role for LES Command
 
@@ -441,6 +441,6 @@ alt="undirectedmenu" style="height: 250px; width:500px;margin:auto;display:block
 
 <img src="./Attachments/Bundles/Unassign.png"
 alt="undirectedmenu" style="height: 250px; width:500px;margin:auto;display:block; cursor: zoom-in; 
-              border: 2px solid #000000; border-radius: 4px;"
-              onclick="this.style.height='400px'; this.style.cursor='zoom-out';" 
-       ondblclick="this.style.height='200px'; this.style.cursor='zoom-in';">
+border: 2px solid #000000; border-radius: 4px;"
+onclick="this.style.height='400px'; this.style.cursor='zoom-out';" 
+ondblclick="this.style.height='200px'; this.style.cursor='zoom-in';">
