@@ -35,7 +35,7 @@ This screen is designed for administrators or users with appropriate roles to ma
 ### Main Components
 
 - [CRUD Functionality](./bundles/crudfunctionality.md)
-- [How to Write Script?](./bundles/writescript.md)
+- [LES Commands](./bundles/writescript.md)
 - [Add new Field on screen](./bundles/addnewfield.md)
 - [Drop-down MultiSelection](./bundles/multiselection.md)
 - [Unassign Role for LES Command](./bundles/unassignrole.md)
