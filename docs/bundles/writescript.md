@@ -1,10 +1,12 @@
-# How to Write Script?
+# LES Commands (Main, Detail, and Action)
 
-LES command scripts are categorized into three types:
+LES command scripts are categorized into four types:
 1. **Main Commands** – Define the core structure of a report, including its query and layout.
 2. **Action Commands** – Trigger specific operations or backend processes directly from the data grid (e.g., update status, call a MOCA command).
 3. **Detail Commands** – Display additional, related information in expandable detail grids linked to the main data.
 4. **hyperlink Commands** – Enable navigation to other screens or drill-down reports by linking rows or columns to new views.
+
+## How to Write Script?
 
 Following the correct format for these commands ensures optimal performance and seamless integration within SmartViu.
 
@@ -13,7 +15,7 @@ border: 2px solid #000000; border-radius: 4px;"
 onclick="this.style.height='400px'; this.style.cursor='zoom-out';" 
 ondblclick="this.style.height='200px'; this.style.cursor='zoom-in';">
 
-## Main Commands
+### Main Commands
 
 Main commands are the primary instructions used to manage LES commands within SmartViu. Users must define the main command with the above-mentioned format. Users also follow the format for defining each main command ID such as `<Main-CMD>`.
 
@@ -91,7 +93,7 @@ and limit = nvl(@limit,100000000000)
     ]catch (-1403,510)
 }  
 ```
-## Action Commands
+### Action Commands
 
 Action commands are specific instructions associated with main commands. They define the actions that can be performed on the data. The format for an action command ID is typically `<Main-CMD>-A-1`, `<Main-CMD>-A-2`.
 
@@ -152,7 +154,7 @@ if (@dstloc is not null)
 }
 ```
 
-## Detail Commands
+### Detail Commands
 
 Detail commands provide additional configuration and details for each main command. They extend the functionality and customization of main commands. The format for a detail command ID is typically `<Main-CMD>-D-1`, `<Main-CMD>-D-2`.
 
@@ -205,7 +207,7 @@ and @+locmst.stoloc
 ]catch (-1403,510)
 ``` 
 
-## HyperLink Commands
+### HyperLink Commands
 Hyperlink is used to allow users to easily navigate from main grid to another popup screen based on a column name.  
 The format for a Hyperlink is typically <COLUMN1-Main-CMD>-H-1, < COLUMN2-Main-CMD>-H-2 
 
