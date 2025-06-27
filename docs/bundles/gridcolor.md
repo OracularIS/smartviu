@@ -8,14 +8,14 @@ To apply grid coloring:
 
 2. Click on the **“Color Config Window”** button.
 
-    <img src="../Attachments/Screen/Color_Config_window1.png" alt="undirectedmenu" style="height: 150px; width:500px;margin:auto;display:block; cursor: zoom-in; 
+    <img src="./Attachments/Color_Config_window1.png" alt="undirectedmenu" style="height: 150px; width:500px;margin:auto;display:block; cursor: zoom-in; 
     border: 2px solid #000000; border-radius: 4px;"
     onclick="this.style.height='400px'; this.style.cursor='zoom-out';" 
     ondblclick="this.style.height='200px'; this.style.cursor='zoom-in';">
 
 3. A new pop-up window will open where you can define the criteria for applying color coding to the grid.
 
-    <img src="../Attachments/Screen/Color_Config_window2.png" alt="undirectedmenu" style="height: 200px; width:500px;margin:auto;display:block; cursor: zoom-in; 
+    <img src="./Attachments/Color_Config_window2.png" alt="undirectedmenu" style="height: 200px; width:500px;margin:auto;display:block; cursor: zoom-in; 
     border: 2px solid #000000; border-radius: 4px;"
     onclick="this.style.height='400px'; this.style.cursor='zoom-out';" 
     ondblclick="this.style.height='200px'; this.style.cursor='zoom-in';">
@@ -35,7 +35,7 @@ To apply grid coloring:
     - **Update**: This button is used to modify an existing rule.
     - **Delete**: Click the "Delete" button to remove the selected grid rule.
 
-    <img src="../Attachments/Screen/Color_Config_window3.png" alt="undirectedmenu" style="height: 200px; width:500px;margin:auto;display:block; cursor: zoom-in; 
+    <img src="./Attachments/Color_Config_window3.png" alt="undirectedmenu" style="height: 200px; width:500px;margin:auto;display:block; cursor: zoom-in; 
     border: 2px solid #000000; border-radius: 4px;"
     onclick="this.style.height='400px'; this.style.cursor='zoom-out';" 
     ondblclick="this.style.height='200px'; this.style.cursor='zoom-in';">
@@ -44,7 +44,7 @@ To apply grid coloring:
 
 5. Now, check the grid coloring applied to the main grid.
 
-    <img src="../Attachments/Screen/Color_Config_window4.png" alt="undirectedmenu" style="height: 120px;margin:auto;display:block; cursor: zoom-in; 
+    <img src="./Attachments/Color_Config_window4.png" alt="undirectedmenu" style="height: 120px;margin:auto;display:block; cursor: zoom-in; 
     border: 2px solid #000000; border-radius: 4px;"
     onclick="this.style.height='400px'; this.style.cursor='zoom-out';" 
     ondblclick="this.style.height='200px'; this.style.cursor='zoom-in';">

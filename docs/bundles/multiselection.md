@@ -5,12 +5,12 @@ In the screenshot below, multi-selection is demonstrated on a SmartViu screen.
 
 - After selecting multiple values from the dropdown, click the Find button to apply the filter.
 
-  <img src="../Attachments/Bundles/Multi_Selection.png" alt="undirectedmenu" style="height: 250px; width:500px;margin:auto;display:block; cursor: zoom-in; 
+  <img src="./Attachments/Multi_Selection.png" alt="undirectedmenu" style="height: 250px; width:500px;margin:auto;display:block; cursor: zoom-in; 
   border: 2px solid #000000; border-radius: 4px;"
   onclick="this.style.height='400px'; this.style.cursor='zoom-out';" 
   ondblclick="this.style.height='200px'; this.style.cursor='zoom-in';">
 
-  <img src="../Attachments/Bundles/Multi_Selection_Grid_view.png" alt="undirectedmenu" style="height: 250px; width:500px;margin:auto;display:block; cursor: zoom-in; 
+  <img src="./Attachments/Multi_Selection_Grid_view.png" alt="undirectedmenu" style="height: 250px; width:500px;margin:auto;display:block; cursor: zoom-in; 
   border: 2px solid #000000; border-radius: 4px;"
   onclick="this.style.height='400px'; this.style.cursor='zoom-out';" 
   ondblclick="this.style.height='200px'; this.style.cursor='zoom-in';">

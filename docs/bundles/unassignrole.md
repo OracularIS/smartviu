@@ -7,7 +7,7 @@ Follow these steps to remove a role assignment from a specific LES command:
 3. Click on the "Unassign" button to unassign the roles from the selected LES command.
 4. Now, the role for the selected LES command is removed.
 
-    <img src="../Attachments/Bundles/Unassign.png"
+    <img src="./Attachments/Unassign.png"
     alt="undirectedmenu" style="height: 250px; width:500px;margin:auto;display:block; cursor: zoom-in; 
     border: 2px solid #000000; border-radius: 4px;"
     onclick="this.style.height='400px'; this.style.cursor='zoom-out';" 
