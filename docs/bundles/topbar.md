@@ -2,7 +2,6 @@
 
 Some action buttons are available on the top menu of the SmartViu screen.
 
-
 - **Clear Grid Data**  
   The **"Clear Grid Data"** button clears the current grid data and makes the input fields for search criteria visible.
 

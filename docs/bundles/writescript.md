@@ -1,4 +1,4 @@
-# LES Commands (Main, Detail, and Action)
+# LES Commands
 
 LES command scripts are categorized into four types:
 1. **Main Commands** – Define the core structure of a report, including its query and layout.
@@ -10,7 +10,7 @@ LES command scripts are categorized into four types:
 
 Following the correct format for these commands ensures optimal performance and seamless integration within SmartViu.
 
-<img src="./Attachments/Bundles/LES_Cmd_Script.png" alt="undirectedmenu" style="height:height: 350px; width :500px ;margin:auto;display:block; cursor: zoom-in; 
+<img src="../Attachments/Bundles/LES_Cmd_Script.png" alt="undirectedmenu" style="height:height: 350px; width :500px ;margin:auto;display:block; cursor: zoom-in; 
 border: 2px solid #000000; border-radius: 4px;"
 onclick="this.style.height='400px'; this.style.cursor='zoom-out';" 
 ondblclick="this.style.height='200px'; this.style.cursor='zoom-in';">
@@ -19,7 +19,7 @@ ondblclick="this.style.height='200px'; this.style.cursor='zoom-in';">
 
 Main commands are the primary instructions used to manage LES commands within SmartViu. Users must define the main command with the above-mentioned format. Users also follow the format for defining each main command ID such as `<Main-CMD>`.
 
-<img src="./Attachments/Bundles/Main_Command.png" alt="undirectedmenu" style="height: 300px; width :500px ;margin:auto;display:block; cursor: zoom-in; 
+<img src="../Attachments/Bundles/Main_Command.png" alt="undirectedmenu" style="height: 300px; width :500px ;margin:auto;display:block; cursor: zoom-in; 
 border: 2px solid #000000; border-radius: 4px;"
 onclick="this.style.height='400px'; this.style.cursor='zoom-out';" 
 ondblclick="this.style.height='200px'; this.style.cursor='zoom-in';">
@@ -97,7 +97,7 @@ and limit = nvl(@limit,100000000000)
 
 Action commands are specific instructions associated with main commands. They define the actions that can be performed on the data. The format for an action command ID is typically `<Main-CMD>-A-1`, `<Main-CMD>-A-2`.
 
-<img src="./Attachments/Bundles/Action_Command.png" alt="undirectedmenu" style="height: 300px; width :500px ;margin:auto;display:block; cursor: zoom-in; 
+<img src="../Attachments/Bundles/Action_Command.png" alt="undirectedmenu" style="height: 300px; width :500px ;margin:auto;display:block; cursor: zoom-in; 
 border: 2px solid #000000; border-radius: 4px;"
 onclick="this.style.height='400px'; this.style.cursor='zoom-out';" 
 ondblclick="this.style.height='200px'; this.style.cursor='zoom-in';">
@@ -153,12 +153,11 @@ if (@dstloc is not null)
     }
 }
 ```
-
 ### Detail Commands
 
 Detail commands provide additional configuration and details for each main command. They extend the functionality and customization of main commands. The format for a detail command ID is typically `<Main-CMD>-D-1`, `<Main-CMD>-D-2`.
 
-<img src="./Attachments/Bundles/Dtl_Command.png" alt="undirectedmenu" style="height: 300px; width :500px ;margin:auto;display:block; cursor: zoom-in; 
+<img src="../Attachments/Bundles/Dtl_Command.png" alt="undirectedmenu" style="height: 300px; width :500px ;margin:auto;display:block; cursor: zoom-in; 
 border: 2px solid #000000; border-radius: 4px;"
 onclick="this.style.height='400px'; this.style.cursor='zoom-out';" 
 ondblclick="this.style.height='200px'; this.style.cursor='zoom-in';">
@@ -219,7 +218,7 @@ Ordnum: Column name is used for hyperlink
 usr_ossi_test_ord_newn: Main LES Command ID 
 
 H-1: It represents the first Hyperlink  
-<img src="./Attachments/Bundles/HyperLink_Command.png" alt="undirectedmenu" style="height: 300px; width :500px ; width :px ;margin:auto;display:block;cursor: zoom-in; 
+<img src="../Attachments/Bundles/HyperLink_Command.png" alt="undirectedmenu" style="height: 300px; width :500px ; width :px ;margin:auto;display:block;cursor: zoom-in; 
 border: 2px solid #000000; border-radius: 4px;"
 onclick="this.style.height='400px'; this.style.cursor='zoom-out';" 
 ondblclick="this.style.height='200px'; this.style.cursor='zoom-in';">

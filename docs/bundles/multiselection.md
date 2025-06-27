@@ -1,20 +1,22 @@
 # Multi Selection
-Multi-selection is supported in SmartViu for drop-down fields. If a user wants to add a report that includes multiple selections, some changes need to be made in the LES Command script. Below is an example of multi-selection.
+Multi-selection is supported in SmartViu for drop-down fields. If a user wants to add a report that includes multiple selections, some changes need to be made in the LES Command script. 
 
-<img src="./Attachments/Bundles/Multi_Selection.png" alt="undirectedmenu" style="height: 250px; width:500px;margin:auto;display:block; cursor: zoom-in; 
-border: 2px solid #000000; border-radius: 4px;"
-onclick="this.style.height='400px'; this.style.cursor='zoom-out';" 
-ondblclick="this.style.height='200px'; this.style.cursor='zoom-in';">
-</br>
+In the screenshot below, multi-selection is demonstrated on a SmartViu screen. 
 
-In the below screenshot multi selection is shown on Smart Viu. Click on Find button.
+- After selecting multiple values from the dropdown, click the Find button to apply the filter.
 
-<img src="./Attachments/Bundles/Multi_Selection_Grid_view.png" alt="undirectedmenu" style="height: 250px; width:500px;margin:auto;display:block; cursor: zoom-in; 
-border: 2px solid #000000; border-radius: 4px;"
-onclick="this.style.height='400px'; this.style.cursor='zoom-out';" 
-ondblclick="this.style.height='200px'; this.style.cursor='zoom-in';">
-</br>
-There are some changes need to be made in LES Command script for Multi Selection. 
+  <img src="../Attachments/Bundles/Multi_Selection.png" alt="undirectedmenu" style="height: 250px; width:500px;margin:auto;display:block; cursor: zoom-in; 
+  border: 2px solid #000000; border-radius: 4px;"
+  onclick="this.style.height='400px'; this.style.cursor='zoom-out';" 
+  ondblclick="this.style.height='200px'; this.style.cursor='zoom-in';">
+
+  <img src="../Attachments/Bundles/Multi_Selection_Grid_view.png" alt="undirectedmenu" style="height: 250px; width:500px;margin:auto;display:block; cursor: zoom-in; 
+  border: 2px solid #000000; border-radius: 4px;"
+  onclick="this.style.height='400px'; this.style.cursor='zoom-out';" 
+  ondblclick="this.style.height='200px'; this.style.cursor='zoom-in';">
+
+## Script Changes for Multi-Selection
+Update the publish data clause in your LES command to handle comma-separated values using instr or IN clauses.
 
  ```sql
  publish data
