@@ -10,7 +10,7 @@ LES command scripts are categorized into four types:
 
 Following the correct format for these commands ensures optimal performance and seamless integration within SmartViu.
 
-<img src="../Attachments/LES_Cmd_Script.png" alt="undirectedmenu" style="height:height: 350px; width :500px ;margin:auto;display:block; cursor: zoom-in; 
+<img src="./Attachments/LES_Cmd_Script.png" alt="undirectedmenu" style="height:height: 350px; width :500px ;margin:auto;display:block; cursor: zoom-in; 
 border: 2px solid #000000; border-radius: 4px;"
 onclick="this.style.height='400px'; this.style.cursor='zoom-out';" 
 ondblclick="this.style.height='200px'; this.style.cursor='zoom-in';">
