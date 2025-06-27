@@ -19,7 +19,7 @@ ondblclick="this.style.height='200px'; this.style.cursor='zoom-in';">
 
 Main commands are the primary instructions used to manage LES commands within SmartViu. Users must define the main command with the above-mentioned format. Users also follow the format for defining each main command ID such as `<Main-CMD>`.
 
-<img src="../Attachments/Bundles/Main_Command.png" alt="undirectedmenu" style="height: 300px; width :500px ;margin:auto;display:block; cursor: zoom-in; 
+<img src="./Attachments/Bundles/Main_Command.png" alt="undirectedmenu" style="height: 300px; width :500px ;margin:auto;display:block; cursor: zoom-in; 
 border: 2px solid #000000; border-radius: 4px;"
 onclick="this.style.height='400px'; this.style.cursor='zoom-out';" 
 ondblclick="this.style.height='200px'; this.style.cursor='zoom-in';">
