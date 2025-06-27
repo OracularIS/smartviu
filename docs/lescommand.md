@@ -9,8 +9,8 @@ This screen is designed for administrators or users with appropriate roles to ma
 
 ## Main Components
 
-- [CRUD Functionality](./crudfunctionality.md)
-- [LES Commands](./writescript.md)
-- [Add new Field on screen](./addnewfield.md)
-- [Drop-down MultiSelection](./multiselection.md)
-- [Unassign Role for LES Command](./unassignrole.md)
+- [CRUD Functionality](./bundles/crudfunctionality.md)
+- [LES Commands](./bundles/writescript.md)
+- [Add new Field on screen](./bundles/addnewfield.md)
+- [Drop-down MultiSelection](./bundles/multiselection.md)
+- [Unassign Role for LES Command](./bundles/unassignrole.md)
