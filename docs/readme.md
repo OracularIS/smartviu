@@ -22,13 +22,17 @@ SmartViu streamlines the creation and management of screens, allowing you to foc
 | Server-Side Language| MOCA (LES scripting) |
 | Database            | SQL Server or Oracle |
 
-### LES Commands (Main, Detail, and Action)
 
-- **Main Command:** This component defines the primary commands available in SmartViu, such as adding, updating, and deleting LES commands. Developers can customize these commands to meet specific business needs.
-- **Detail Command:** Provides additional details and configurations for each main command. Developers can extend these details to capture more granular information.
-- **Action Command:** Defines the actions that can be performed on the data within SmartViu, such as running specific reports or executing tasks. Developers can add new actions or modify existing ones to enhance functionality.
+### Security - Role-Based Access Control
 
-### Security
+Security in SmartViu is managed through role-based access control to ensure secure and controlled access to reports and actions. Each LES command can be mapped to one or more user roles, restricting visibility and execution to authorized personnel only.
 
-Security in SmartViu is managed through role-based access control. Each LES command can be assigned specific roles, ensuring that only authorized users can access certain reports and functionalities. Users can define new roles from standard Blue Yonder configuration, assign permissions, and manage user access to maintain a secure environment.
+By integrating directly with existing Blue Yonder WMS role configurations, SmartViu allows administrators to:
+
+1. Control access to reports
+2. Assign or remove roles
+3. Keep the system secure without extra setup
+
+
+
 
