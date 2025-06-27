@@ -8,7 +8,7 @@ The SmartViu screen is designed for end-users to easily view and work with the r
 
 ## Main Components
 
-- [View Report List and Report Data](./viewreport.md)
+- [View Report List and Report Data](../bundles/viewreport.md)
 - [View and Process Detailed Actions](./viewdetailaction.md)
 - [View and Process Grid Actions](./viewgridaction.md)
 - [View and Process Hyperlink](./viewhyperlink.md)
