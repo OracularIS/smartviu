@@ -47,3 +47,4 @@ else if(instr(@trlr_stat,','))
 {publish data where trlr_stat_clause = 'and trlr_stat in('||@trlr_stat||')'
 
 }
+```
