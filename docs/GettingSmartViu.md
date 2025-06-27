@@ -5,13 +5,11 @@ Get started with **SmartViu** today and enhance your Blue Yonder WMS experience!
 
 To use SmartViu, ensure that your system meets the following requirements:
 
-| Requirement           | Minimum Specification  |
-|-----------------------|------------------------|
-| Web Browser                     | latest version               |
-| Internet Access                 | stable internet connection   |
-| Blue Yonder WMS Credentials     | Authorized login credentials |
-
----
+| Requirement                | Minimum Specification     |
+|----------------------------|---------------------------|
+| Web Browser                | latest version               |
+| Internet Access            | stable internet connection   |
+| Blue Yonder WMS Credentials| Authorized login credentials |
 
 ## Accessing SmartViu
 
