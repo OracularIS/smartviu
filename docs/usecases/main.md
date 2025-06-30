@@ -4,7 +4,7 @@ Explore key SmartViu features through practical use cases. Click on any topic be
 
 | **Use Case**               | **Link**                          |
 |----------------------------|-----------------------------------|
-| Automatic Pagination       | [View Details](./pagination.md)   |
+| Pagination       | [View Details](/usecases/pagination.md)   |
 
 
 ---
