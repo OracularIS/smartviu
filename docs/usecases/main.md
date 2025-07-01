@@ -7,8 +7,8 @@ Click any topic to get started.
 
 | **Use Case**               | **Link**                          |
 |----------------------------|-----------------------------------|
-| Old Pagination Methods in SmartViu | [View Details](pagination.md#old-pagination-methods-in-smartviu)   |
-| New Pagination Methods in SmartViu | [View Details](pagination.md#new-pagination-method-in-smartviu)   |
+| Scripts to Handle Pagination | [View Details](/usecases/pagination.md)   |
+| Scripts to Handle Complex Queries | [View Details](/usecases/complexqueries.md)   |
 
 
 ---
