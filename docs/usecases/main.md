@@ -1,10 +1,14 @@
 # Use Cases
 
-Explore key SmartViu features through practical use cases. Click on any topic below to learn how each functionality works and how to implement it effectively.
+Learn how to work with SmartViu by exploring practical use cases.
+Each example walks you through writing commands, applying logic, and setting up scripts to solve real problems step by step.
+
+Click any topic to get started.
 
 | **Use Case**               | **Link**                          |
 |----------------------------|-----------------------------------|
-| Pagination       | [View Details](/usecases/pagination.md)   |
+| Old Pagination Methods in SmartViu | [View Details](pagination.md#old-pagination-methods-in-smartviu)   |
+| New Pagination Methods in SmartViu | [View Details](pagination.md#new-pagination-method-in-smartviu)   |
 
 
 ---
