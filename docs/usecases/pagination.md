@@ -8,9 +8,9 @@ However, in earlier version of SmartViu, pagination was not built-in, so this fu
 
  Below are the three primary techniques that were commonly used in older versions of SmartViu:
 
-1. [Internal Table Handling](./pagination.md#method-1-internal-table-handling)
-2. [Inline Pagination Directive](./pagination.md#method-2-inline-pagination-directive)
-3. [Using `get paged results` Command](./pagination.md#method-3-using-get-paged-results-command)
+1. Internal Table Handling
+2. Inline Pagination Directive
+3. Using Command
 
 ### Method 1: Internal Table Handling
 
@@ -59,6 +59,7 @@ This method involved manually managing pagination by publishing data into intern
     ```moca
     'ORDER BY 1 LIMIT ' || @limit || ' OFFSET ' || @offset
     ```
+
 This method offered flexibility but was complex to maintain, and prone to errors if not handled carefully—especially with large datasets or nested queries.
 
 ### Method 2: Inline Pagination Directive
