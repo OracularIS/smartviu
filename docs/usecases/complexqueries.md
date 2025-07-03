@@ -4,8 +4,8 @@ When working with complex queries such as those involving multiple joins, large 
 
 To handle such cases efficiently, SmartViu provides two effective methods that simplify execution while improving performance:
 
-1. [Using @getcolclause](./complexqueries.md#method-1-use-getcolclause-for-dynamic-queries)
-2. [Using SmartViu Policies](./complexqueries.md#method-2-use-policies-for-static-column-definition)
+1. Using @getcolclause
+2. Using SmartViu Policies
 
 ##  Method 1: Use `@getcolclause` for Dynamic Queries
 
@@ -56,9 +56,7 @@ In some cases, your query logic might be too complex to dynamically determine co
 - Conditional logic
 - Runtime joins or unions
 
-To handle these scenarios, SmartViu allows you to define policies that explicitly control how data is displayed, without relying on SmartViu to infer the column structure.
-
-These policies allow you to define the structure and display of your report data manually, avoiding the need for multiple query executions.
+To handle these scenarios, SmartViu allows you to define policies that explicitly control how data is displayed, without relying on SmartViu to infer the column structure. These policies allow you to define the structure and display of your report data manually, avoiding the need for multiple query executions.
 
 ### Policies to Configure
 
