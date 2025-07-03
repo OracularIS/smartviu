@@ -4,8 +4,8 @@ When working with complex queries such as those involving multiple joins, large 
 
 To handle such cases efficiently, SmartViu provides two effective methods that simplify execution while improving performance:
 
-1. Using @getcolclause (ideal for dynamic, grid-based screens)
-2. Using SmartViu Policies (ideal for structured, static reports)
+1. [Using @getcolclause](./complexqueries.md#method-1-use-getcolclause-for-dynamic-queries)
+2. [Using SmartViu Policies](./complexqueries.md#method-2-use-policies-for-static-column-definition)
 
 ##  Method 1: Use `@getcolclause` for Dynamic Queries
 
