@@ -1,8 +1,8 @@
 # SmartViu Release Updates
 
-1. [Version 1.0](#version-10--core-launch)
-2. [Version 1.0.1](#version-101--hotfix-export-functionality)
-3. [Version 2.0](#version-20--react-refactor--performance-enhancements)
+1. Version 1.0 – Core Launch
+2. Version 1.0.1 – Hotfix: Export Functionality
+3. Version 2.0 – React Refactor & Performance Enhancements
 
 ## Version 1.0 – Core Launch
 
