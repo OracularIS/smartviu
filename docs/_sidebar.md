@@ -6,7 +6,8 @@
   - [SmartViu Screen](./smartviu.md)
   - [OSSI - LES Command Maintenance](./lescommand.md)
 - [Use Cases](./usecases/main.md)
-  - [Scripts to Handle Pagination](./usecases/pagination.md)
+  - [Pagination in SmartViu](./usecases/pagination.md)
   - [Scripts to Handle Complex Queries](./usecases/complexqueries.md)
 
+- [Release Updates](./relase_notes.md)
 - [SmartViu FAQ](./FAQ.md)
