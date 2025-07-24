@@ -8,6 +8,6 @@
 - [Use Cases](./usecases/main.md)
   - [Pagination in SmartViu](./usecases/pagination.md)
   - [Scripts to Handle Complex Queries](./usecases/complexqueries.md)
-
+- [Snowflake Integration](./snowflake.md)
 - [Release Updates](./relase_notes.md)
 - [SmartViu FAQ](./FAQ.md)
