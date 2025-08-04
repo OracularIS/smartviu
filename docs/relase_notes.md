@@ -6,7 +6,7 @@
 
 ## Version 1.0 – Core Launch
 
-**Date:** 23 April, 2025
+**Date:** 23rd April, 2025
 
 ### Summary
 Initial rollout of SmartViu, delivering the core reporting engine and foundational UI components.
@@ -22,7 +22,7 @@ This version laid the groundwork for all future enhancements.
 
 ## Version 1.0.1 – Hotfix: Export Functionality
 
-**Date:** 18 July, 2025
+**Date:** 18th July, 2025
 
 ### Summary 
 
@@ -36,19 +36,19 @@ Resolved a CSV export issue where special characters caused formatting problems.
 **Note:**
 This fix was safely applied without requiring a db load or affecting any customizations in live environments.
 
-## Version 2.0 – React Refactor & Performance Enhancements
+## Version 2.0 – Code Refactor & smart-is.ai Dependency Removal
 
-**Date:** 1st July,2025
+**Date:** 1st August,2025
 
 ### Summary
 
-A major front-end upgrade with SmartViu now powered by React, delivering a faster and more responsive user experience.
+This release focuses on backend optimization and codebase simplification. SmartViu has undergone a structural upgrade to improve performance and maintainability by refactoring core logic and removing unnecessary dependencies.
 
 ### Improvements
 
-- Faster screen rendering and data loading
-- Modern, scalable front-end codebase
-- Improved maintainability for future enhancements
-- Enhanced UX with smoother interactions and transitions
+- Major codebase refactoring to improve maintainability and performance
+- Removed dependency on Smart-is.ai for a cleaner and more independent architecture
+- Reduced external dependency footprint
+- Foundation set for smoother scaling and future development
 
 This release maintains full backward compatibility while bringing modern UI standards to the SmartViu platform.

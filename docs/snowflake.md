@@ -35,3 +35,17 @@ execute smart snowflake query
 | `uc_use_snowflake_views`  | Enables SmartViu to use the default Snowflake views schema            | `1` to enable, `0` to disable |
 
 When uc_use_snowflake_views = 1, SmartViu automatically connects to the appropriate Snowflake schema.
+
+## Managing Snowflake Views in Smart MOCA Client
+
+While SmartViu allows you to query Snowflake data seamlessly within your smartviu screen, the creation and maintenance of Snowflake views is performed separately in Smart MOCA Client using the **Snowflake** add-on feature.
+
+### Key Features:
+
+1. **Create View(s)**: Automatically generate views in Snowflake for selected WMS tables. This ensures consistent data structures and makes querying simpler.
+
+2. **Drop View(s)**: Easily remove outdated or unnecessary views without leaving the Smart MOCA Client.
+
+3. **Missing MLS Text**: Fill in missing multilingual descriptions (MLS) for columns so that views are clearly labeled for reporting and end users.
+
+These capabilities ensure that your Snowflake environment is set up properly for use in SmartViu.
