@@ -5,6 +5,8 @@
 
     SmartViu is a **custom framework**, inspired by **Dynamic Data Applications (DDAs)** but designed on a modern and more advanced architecture.
 
+    
+
 2. **Does SmartViu use REST APIs for its actions?**
 
     Yes, SmartViu utilizes **REST APIs** for its actions. It employs an action file to invoke **MOCA commands**, similar to the approach used by BY in their Standard Page Builder.

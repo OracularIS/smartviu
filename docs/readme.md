@@ -2,7 +2,7 @@
 
 ### What is SmartViu?
 
-SmartViu is a customized web-based solution designed for Blue Yonder (BY) WMS users. It is designed to simplify screen development for users with no experience in Page Builder, DDAs, and Web screens. SmartViu is a no-code/low-code solution specifically tailored for Blue Yonder WMS users, making the process of screen creation effortless and efficient.
+SmartViu is a customized web-based solution designed for Blue Yonder (BY) WMS users. It is designed to simplify screen development for users with no experience in Page Builder, DDAs, and web screens. SmartViu is a no-code/low-code solution specifically tailored for Blue Yonder WMS users, making the process of screen creation effortless and efficient.
 
 SmartViu streamlines the creation and management of screens, allowing you to focus on optimizing your operations and achieving your business goals.
 
