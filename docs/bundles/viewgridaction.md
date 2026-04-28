@@ -7,7 +7,7 @@ Follow these steps to use this feature:
 1. Navigate to the main grid and select the record you wish to perform an action on by clicking on them.
 2. Select the 'Action' button. If the selected record needs to be processed as a move inventory action, click the 'Move Inventory Process' button. To delete the record, click the 'Purge WMS Inventory' button.
 
-    <img src="./Attachments/t5.png" alt="undirectedmenu" style="height: 250px; width:500px;margin:auto;display:block; cursor: zoom-in; 
+    <img src="/Attachments/t5.png" alt="undirectedmenu" style="height: 250px; width:500px;margin:auto;display:block; cursor: zoom-in; 
     border: 2px solid #000000; border-radius: 4px;"
     onclick="this.style.height='400px'; this.style.cursor='zoom-out';" 
     ondblclick="this.style.height='200px'; this.style.cursor='zoom-in';">
@@ -16,7 +16,7 @@ Follow these steps to use this feature:
 
     For example, if you want to move inventory, you will need to provide the destination load and destination location where the inventory will be moved.
 
-    <img src="./Attachments/t6.png" alt="undirectedmenu" style="height: 250px; width:500px;margin:auto;display:block; cursor: zoom-in; 
+    <img src="/Attachments/t6.png" alt="undirectedmenu" style="height: 250px; width:500px;margin:auto;display:block; cursor: zoom-in; 
     border: 2px solid #000000; border-radius: 4px;"
     onclick="this.style.height='400px'; this.style.cursor='zoom-out';" 
     ondblclick="this.style.height='200px'; this.style.cursor='zoom-in';">

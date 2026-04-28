@@ -21,7 +21,7 @@ To view the report list in SmartViu:
 
     *Note: These input fields are created for each LES command based on the publish statement at the top of the MOCA script.*
 
-    <img src="./Attachments/Input_Field_Publish_command.png" alt="undirectedmenu" style="height: 250px; width 500px;margin:auto;display:block; cursor: zoom-in; 
+    <img src="/Attachments/Input_Field_Publish_command.png" alt="undirectedmenu" style="height: 250px; width 500px;margin:auto;display:block; cursor: zoom-in; 
     border: 2px solid #000000; border-radius: 4px;"
     onclick="this.style.height='400px'; this.style.cursor='zoom-out';" 
     ondblclick="this.style.height='200px'; this.style.cursor='zoom-in';">
@@ -29,7 +29,7 @@ To view the report list in SmartViu:
 
 3. Enter the required fields and Click on the "Find" button to load the report data in the grid, or you can fill out input fields to find data based on the given input parameters.
 
-    <img src="./Attachments/t4.png" alt="undirectedmenu" style="height: 250px; width:500px;margin:auto;display:block; cursor: zoom-in; 
+    <img src="/Attachments/t4.png" alt="undirectedmenu" style="height: 250px; width:500px;margin:auto;display:block; cursor: zoom-in; 
     border: 2px solid #000000; border-radius: 4px;"
     onclick="this.style.height='400px'; this.style.cursor='zoom-out';" 
     ondblclick="this.style.height='200px'; this.style.cursor='zoom-in';">
