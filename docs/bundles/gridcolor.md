@@ -4,18 +4,17 @@ The grid coloring functionality in the SmartViu screen helps you visualize repor
 
 To apply grid coloring:
 
-1. Select a record from the main grid.
 
-2. Click on the **“Color Config Window”** button.
+1. Click on the **“Color Config Window”** button.
 
-    <img src="./Attachments/Color_Config_window1.png" alt="undirectedmenu" style="height: 150px; width:500px;margin:auto;display:block; cursor: zoom-in; 
+    <img src="./Attachments/t11.png" alt="undirectedmenu" style="height: 150px; width:500px;margin:auto;display:block; cursor: zoom-in; 
     border: 2px solid #000000; border-radius: 4px;"
     onclick="this.style.height='400px'; this.style.cursor='zoom-out';" 
     ondblclick="this.style.height='200px'; this.style.cursor='zoom-in';">
 
 3. A new pop-up window will open where you can define the criteria for applying color coding to the grid.
 
-    <img src="./Attachments/Color_Config_window2.png" alt="undirectedmenu" style="height: 200px; width:500px;margin:auto;display:block; cursor: zoom-in; 
+    <img src="./Attachments/t10.png" alt="undirectedmenu" style="height: 200px; width:500px;margin:auto;display:block; cursor: zoom-in; 
     border: 2px solid #000000; border-radius: 4px;"
     onclick="this.style.height='400px'; this.style.cursor='zoom-out';" 
     ondblclick="this.style.height='200px'; this.style.cursor='zoom-in';">
@@ -35,16 +34,10 @@ To apply grid coloring:
     - **Update**: This button is used to modify an existing rule.
     - **Delete**: Click the "Delete" button to remove the selected grid rule.
 
-    <img src="./Attachments/Color_Config_window3.png" alt="undirectedmenu" style="height: 200px; width:500px;margin:auto;display:block; cursor: zoom-in; 
-    border: 2px solid #000000; border-radius: 4px;"
-    onclick="this.style.height='400px'; this.style.cursor='zoom-out';" 
-    ondblclick="this.style.height='200px'; this.style.cursor='zoom-in';">
-
-    For example, in the above screenshot, grid coloring is applied to the entire row that has item number "1000660616", and this rule is set at the User Level (e.g., only the SUPER user will see this grid rule).
 
 5. Now, check the grid coloring applied to the main grid.
 
-    <img src="./Attachments/Color_Config_window4.png" alt="undirectedmenu" style="height: 120px;margin:auto;display:block; cursor: zoom-in; 
+    <img src="./Attachments/t12.png" alt="undirectedmenu" style="height: 120px;margin:auto;display:block; cursor: zoom-in; 
     border: 2px solid #000000; border-radius: 4px;"
     onclick="this.style.height='400px'; this.style.cursor='zoom-out';" 
     ondblclick="this.style.height='200px'; this.style.cursor='zoom-in';">
@@ -52,3 +45,5 @@ To apply grid coloring:
     *Note: Ensure that you have defined clear and specific criteria for each column or row to make the grid coloring meaningful and helpful.*
 
 Using this grid coloring functionality enhances the readability of your data reports and allows you to quickly identify critical information based on the criteria you set.
+
+---
