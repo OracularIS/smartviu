@@ -31,18 +31,15 @@ Follow these steps to access SmartViu:
     onclick="this.style.height='400px'; this.style.cursor='zoom-out';" 
     ondblclick="this.style.height='200px'; this.style.cursor='zoom-in';">
 
-3. **Open SmartViu:** Click to expand the OSSI TOOL Menu bar and click SmartViu to launch it.
+3. **Open SmartViu:** Click SmartViu to launch it.
 
-    <img src="./Attachments/smartviu1.png" 
+    <img src="./Attachments/n1.png" 
     alt="undirectedmenu" style="height: 250px; width:500px;margin:auto;display:block; cursor: zoom-in; 
     border: 2px solid #000000; border-radius: 4px;"
     onclick="this.style.height='0px'; this.style.cursor='zoom-out';" 
     ondblclick="this.style.height='200px'; this.style.cursor='zoom-in';">
 
-    <img src="./Attachments/smartviu2.png"
-    alt="undirectedmenu" style="height: 250px; width:500px;margin:auto;display:block; cursor: zoom-in; 
-    border: 2px solid #000000; border-radius: 4px;"
-    onclick="this.style.height='400px'; this.style.cursor='zoom-out';" 
-    ondblclick="this.style.height='200px'; this.style.cursor='zoom-in';">
 
 Once logged in, you will have access to all the functionalities and tools SmartViu provides for seamless screen development and management.
+
+----
