@@ -6,6 +6,7 @@
 - [SmartViu Bundle](./bundles.md)
   - [SmartViu Screen](./smartviu.md)
   - [OSSI - LES Command Maintenance](./lescommand.md)
+  - [Smart Assistant](./Assistant.md)
 - [Use Cases](./usecases/main.md)
   - [Pagination in SmartViu](./usecases/pagination.md)
   - [Scripts to Handle Complex Queries](./usecases/complexqueries.md)
