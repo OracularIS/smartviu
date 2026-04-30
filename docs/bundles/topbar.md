@@ -31,3 +31,6 @@ Some action buttons are available on the top menu of the SmartViu screen.
 
 - **Apply Aggregate Function**  
   The **"Apply Aggregate Function"** button is used to apply aggregate functions to the data displayed in the grid.
+
+
+---
