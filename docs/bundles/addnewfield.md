@@ -7,7 +7,7 @@ If there a new field needed to be added in any LES Command Maintenance screen, I
 
 1. In les_var_config table a field name, description and its type must be defined. If a field with the name “tray_box” is required, its data must be added in the “les_var_config” table like given below.
 
-    <img src="/Attachments/LES_Cmd_Tbl1.png" alt="undirectedmenu" style="height: 70px; width:500px;margin:auto;display:block; cursor: zoom-in; 
+    <img src="/Attachments//LES_Cmd_Tbl1.png" alt="undirectedmenu" style="height: 70px; width:500px;margin:auto;display:block; cursor: zoom-in; 
     border: 2px solid #000000; border-radius: 4px;"
     onclick="this.style.height='400px'; this.style.cursor='zoom-out';" 
     ondblclick="this.style.height='200px'; this.style.cursor='zoom-in';">

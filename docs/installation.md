@@ -25,7 +25,7 @@ The screenshots below show examples of the LES and REFS rollout
 package structure.
 
 <div style="text-align: left;">
-  <img src="/attachments/r1.png"
+  <img src="/Attachments/r1.png"
        alt="undirectedmenu"
        style="height: 200px; margin: auto; display: block; cursor: zoom-in;
               border: 2px solid #000000; border-radius: 4px;"
@@ -36,7 +36,7 @@ package structure.
 *The LES rollout package contains these backend folders in pkg.*
 
 <div style="text-align: left;">
-  <img src="/attachments/r2.png"
+  <img src="/Attachments/r2.png"
        alt="undirectedmenu"
        style="height: 200px; margin: auto; display: block; cursor: zoom-in;
               border: 2px solid #000000; border-radius: 4px;"
@@ -69,7 +69,7 @@ Before installing the rollout run the script `env.bat` in
 `cd %LESDIR%\data`.
 
 <div style="text-align: left;">
-  <img src="/attachments/=r4.png"
+  <img src="/Attachments/=r4.png"
        alt="undirectedmenu"
        style="height: 200px; margin: auto; display: block; cursor: zoom-in;
               border: 2px solid #000000; border-radius: 4px;"
@@ -90,7 +90,7 @@ Follow the steps below for each LES rollout folder:
 `perl rollout.pl <rollout_name>`
 
 <div style="text-align: left;">
-  <img src="/attachments/r3.png"
+  <img src="./Attachments/r3.png"
        alt="undirectedmenu"
        style="height: 200px; margin: auto; display: block; cursor: zoom-in;
               border: 2px solid #000000; border-radius: 4px;"
@@ -119,7 +119,7 @@ Follow the steps below for each REFS rollout folder:
     `perl rollout.pl <rollout_name>`
 
     <div style="text-align: left;">
-    <img src="/attachments/r5.png"
+    <img src="/Attachments/r5.png"
         alt="undirectedmenu"
         style="height: 200px; margin: auto; display: block; cursor: zoom-in;
                 border: 2px solid #000000; border-radius: 4px;"
