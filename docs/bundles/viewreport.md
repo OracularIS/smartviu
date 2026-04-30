@@ -6,14 +6,14 @@ To view the report list in SmartViu:
     
     *Note: Users can only view those reports which they are authorized to see. For example, if an LES command is assigned a SUPER role, the user can see the report in the Reports Filter drop-down field or Reports Tree only if the user has the SUPER role assigned.*
 
-    <img src="/Attachments/n2.png" alt="undirectedmenu" style="height: 250px; width:500px;margin:auto;display:block; cursor: zoom-in; 
+    <img src="./Attachments/n2.png" alt="undirectedmenu" style="height: 250px; width:500px;margin:auto;display:block; cursor: zoom-in; 
     border: 2px solid #000000; border-radius: 4px;"
     onclick="this.style.height='400px'; this.style.cursor='zoom-out';" 
     ondblclick="this.style.height='200px'; this.style.cursor='zoom-in';">
 
 2. Select a report from the available report list, and input fields will be drawn dynamically for that report.
 
-    <img src="/Attachments/t3.png"
+    <img src="./Attachments/t3.png"
     alt="undirectedmenu" style="height: 250px; width:500px;margin:auto;display:block;cursor: zoom-in; 
     border: 2px solid #000000; border-radius: 4px;"
     onclick="this.style.height='400px'; this.style.cursor='zoom-out';" 
