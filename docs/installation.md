@@ -69,7 +69,7 @@ Before installing the rollout run the script `env.bat` in
 `cd %LESDIR%\data`.
 
 <div style="text-align: left;">
-  <img src="./attachments/=r4.png"
+  <img src="/attachments/=r4.png"
        alt="undirectedmenu"
        style="height: 200px; margin: auto; display: block; cursor: zoom-in;
               border: 2px solid #000000; border-radius: 4px;"
