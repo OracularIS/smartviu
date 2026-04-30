@@ -7,7 +7,7 @@ Click any topic to get started.
 
 | **Use Case**               | **Link**                          |
 |----------------------------|-----------------------------------|
-| Scripts to Handle Pagination | [View Details](/usecases/pagination.md)   |
+| Pagination in SmartViu | [View Details](/usecases/pagination.md)   |
 | Scripts to Handle Complex Queries | [View Details](/usecases/complexqueries.md)   |
 
 

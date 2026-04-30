@@ -8,4 +8,5 @@ Whether you're configuring report logic or viewing data in real time, SmartViu B
 
 - [SmartViu Screen](./smartviu.md)
 - [OSSI - LES Command Maintenance](./lescommand.md)
+- [Smart Assistant](./Assistant.md)
 
