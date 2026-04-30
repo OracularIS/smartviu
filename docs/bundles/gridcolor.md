@@ -46,4 +46,5 @@ To apply grid coloring:
 
 Using this grid coloring functionality enhances the readability of your data reports and allows you to quickly identify critical information based on the criteria you set.
 
+
 ---

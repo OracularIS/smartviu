@@ -4,7 +4,7 @@ The **"Apply Aggregate Function"** button is used to apply aggregate functions t
 
 1. Select 'Apply Aggregate' button from 'Actions' to apply aggregate function to your data.
 
-    <img src="./Attachments/t13.png" alt="undirectedmenu" style="height: 200px; width:500px;margin:auto;display:block; cursor: zoom-in; 
+    <img src="/Attachments/t13.png" alt="undirectedmenu" style="height: 200px; width:500px;margin:auto;display:block; cursor: zoom-in; 
     border: 2px solid #000000; border-radius: 4px;"
     onclick="this.style.height='400px'; this.style.cursor='zoom-out';" 
     ondblclick="this.style.height='200px'; this.style.cursor='zoom-in';">
