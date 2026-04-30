@@ -129,7 +129,7 @@ Follow the steps below for each REFS rollout folder:
 
     The rollout will start installing in your system.
 
-3. 	Check the log file: Review the generated log file in the log directory for any errors
+3. Check the log file: Review the generated log file in the log directory for any errors
 
 > **Note:** In case of success or warning messages, check the install.log file inside the install folder for details.
 
