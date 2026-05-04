@@ -9,6 +9,7 @@ Click any topic to get started.
 |----------------------------|-----------------------------------|
 | Pagination in SmartViu | [View Details](/usecases/pagination.md)   |
 | Scripts to Handle Complex Queries | [View Details](/usecases/complexqueries.md)   |
+| Custom Column Maintenance | [View Details](/usecases/customcol.md)   |
 
 
 ---
