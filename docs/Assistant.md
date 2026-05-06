@@ -11,4 +11,13 @@ The Smart Assistant is a conversational AI interface within OSSI Tools that allo
         ondblclick="this.style.height='200px'; this.style.cursor='zoom-in';">
     </div>
 
+
+## Policy for Enabling Smart Assistant
+
+To successfully enable and operate Smart Assistant within Smart VIU, the following policies and configurations must be ensured:
+
+| polcod                  | polvar       | polval       | rtstr1                          | rtstr2 |
+|-------------------------|--------------|--------------|---------------------------------|--------|
+| USR-SMARTBASE     | UC-APP-CONG   | MODE            | Smart BY Assistant  | codeonly     |
+
 ---
