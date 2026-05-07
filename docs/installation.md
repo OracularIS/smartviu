@@ -149,4 +149,5 @@ Restart all RedPrairie services that were stopped in the Prerequisites section, 
  
 Verify that all services start successfully without errors.
 
+
 ---

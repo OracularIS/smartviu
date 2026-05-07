@@ -42,4 +42,10 @@ Follow these steps to access SmartViu:
 
 Once logged in, you will have access to all the functionalities and tools SmartViu provides for seamless screen development and management.
 
+## Policy Setup 
+
+To begin working with SmartViu, it is essential to set the necessary policies. 
+
+For policies setup click [here](./policysetup.md)
+
 ----
