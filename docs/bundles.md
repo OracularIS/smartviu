@@ -6,7 +6,7 @@ Whether you're configuring report logic or viewing data in real time, SmartViu B
 
 ## Main Components
 
-- [SmartViu Screen](./smartviu.md)
-- [OSSI - LES Command Maintenance](./lescommand.md)
+- [SmartViu Screen](./bundles/smartviuf/smartviu.md)
+- [OSSI - LES Command Maintenance](./bundles/lescmd/lescommand.md)
 - [Smart Assistant](./Assistant.md)
 

@@ -27,6 +27,7 @@
   - [Pagination in SmartViu](./usecases/pagination.md)
   - [Scripts to Handle Complex Queries](./usecases/complexqueries.md)
   - [Custom Column Maintenance](./usecases/customcol.md)
+- [Controlling Menu Access](./menu.md)
 - [Snowflake Integration](./snowflake.md)
 - [Release Updates](./relase_notes.md)
 - [SmartViu FAQ](./FAQ.md)
