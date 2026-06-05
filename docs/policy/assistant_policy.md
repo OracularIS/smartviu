@@ -1,12 +1,10 @@
-# Policy Setup 
-
-To begin working with SmartViu, it is essential to set the necessary policies.
-
-This document provides a comprehensive guide to all the required policies, along with examples and explanations to help you get started.
-
-## Policies for Smart Assitant 
+# Policies for Smart Assitant 
 
 To successfully enable and operate Smart Assistant within Smart VIU, the following policies and configurations must be ensured:
+
+## Enabling Smart Assitant 
+
+Following policies are used to enabled Smart Assiatant:
 
 ### Enabling Smart Assistant Policy
 
@@ -62,38 +60,58 @@ To configure the Smart Assistant URL, use the following policy:
 |-------------------------|--------------|--------------|---------------------------------|
 | USR-SMARTBASE     | UC-APP-CONG   | URL            | https://ois-ai-wms.azurewebsites.net/v1/warehouse/   |
 
+## LLM Configuration Policies
 
-## Policiy for Email Export
+These policies are used to configure the external Large Language Model (LLM) service. 
 
-To successfully enable and operate Email export within Smart VIU, the following policies and configurations must be ensured:
+If these policies are not configured and enabled, the system may default to the organization's configured LLM service. 
 
-| polcod                  | polvar       | polval       | rtstr1                       |
-|-------------------------|--------------|--------------|---------------------------------|
-| USR-SMARTBASE_EMAIL     | DEFAULT-CONFIG   | Key            | Value   |
+To ensure that AI requests are routed through the client's own LLM provider, these policies must be populated with the client's credentials and endpoint details and then enabled.
 
-**Key names and values**:
 
-Configure these key (polval) and values to setup email export:
+### LLM_API_KEY
 
-- `MAIL_SERVER` → `rtstr1` (SMTP host)
-- `MAIL_PORT` → `rtnum1` (SMTP port)
-- `MAIL_TLS` → `rtnum1` (1/0 enable TLS)
-- `MAIL_USER` → `rtstr1` (username)
-- `MAIL_PASSWORD`→ `rtstr1` (password)
-- `MAIL_SENDER` → `rtstr1` (From address)
-- `FEATURE_ENABLED` → `rtnum1` (1/0 feature flag)
+Stores the API key used to authenticate requests to the client's LLM service.
 
-After setting up the policies navigate to the SmartViu screen and select the email setting button. 
+| polcod | polvar | polval | rtstr1 |
+|---------|---------|---------|---------|
+| USR-SMARTBASE | UC-APP-CONG | LLM_API_KEY | Client LLM API Key value |
 
-<div style="text-align: left;">
-    <img src="./Attachments/emailsetting.png"
-        alt="undirectedmenu"
-        style="height: 200px; margin: auto; display: block; cursor: zoom-in;
-                border: 2px solid #000000; border-radius: 4px;"
-        onclick="this.style.height='400px'; this.style.cursor='zoom-out';"
-        ondblclick="this.style.height='200px'; this.style.cursor='zoom-in';">
-    </div>
 
-From here you can view your email settings and update them too. 
 
-----
+### LLM_BASE_URL
+
+Specifies the base URL of the client's LLM endpoint through which AI requests are routed.
+
+| polcod | polvar | polval | rtstr1 |
+|---------|---------|---------|---------|
+| USR-SMARTBASE | UC-APP-CONG | LLM_BASE_URL |  Client LLM Endpoint URL value |
+
+
+### LLM_MODEL
+
+Defines the model that Smart Assistant will use for generating AI responses.
+
+| polcod | polvar | polval | rtstr1 |
+|---------|---------|---------|---------|
+| USR-SMARTBASE | UC-APP-CONG | LLM_MODEL |  LLM Model Name |
+    
+
+### LLM_PROVIDER
+
+Identifies the LLM provider (for example, OpenAI, Azure OpenAI, or another supported provider).
+
+| polcod | polvar | polval | rtstr1 |
+|---------|---------|---------|---------|
+| USR-SMARTBASE | UC-APP-CONG | LLM_PROVIDER |  LLM Provider Name |
+
+### Policy Enablement
+
+The **RTNUM1** field controls whether a policy is active:
+
+- `RTNUM1 = 1` → Enabled (ON)
+- `RTNUM1 = 0` → Disabled (OFF)
+
+> **Note:** For a policy to take effect, it must be enabled (`RTNUM1 = 1`) and the corresponding value must be populated in `RTSTR1`.
+
+---
