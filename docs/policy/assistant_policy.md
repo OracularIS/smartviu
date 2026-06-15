@@ -1,8 +1,8 @@
-# Policies for Smart Assitant 
+# Policies for Smart Assistant 
 
 To successfully enable and operate Smart Assistant within Smart VIU, the following policies and configurations must be ensured:
 
-## Enabling Smart Assitant 
+## Enabling Smart Assistant 
 
 Following policies are used to enabled Smart Assiatant:
 
@@ -64,8 +64,6 @@ To configure the Smart Assistant URL, use the following policy:
 
 These policies are used to configure the external Large Language Model (LLM) service. 
 
-If these policies are not configured and enabled, the system may default to the organization's configured LLM service. 
-
 To ensure that AI requests are routed through the client's own LLM provider, these policies must be populated with the client's credentials and endpoint details and then enabled.
 
 
@@ -103,15 +101,7 @@ Identifies the LLM provider (for example, OpenAI, Azure OpenAI, or another suppo
 
 | polcod | polvar | polval | rtstr1 |
 |---------|---------|---------|---------|
-| USR-SMARTBASE | UC-APP-CONG | LLM_PROVIDER |  LLM Provider Name |
+| USR-SMARTBASE | UC-APP-CONG | LLM_PROVIDER | Client LLM Provider Name |
 
-### Policy Enablement
-
-The **RTNUM1** field controls whether a policy is active:
-
-- `RTNUM1 = 1` → Enabled (ON)
-- `RTNUM1 = 0` → Disabled (OFF)
-
-> **Note:** For a policy to take effect, it must be enabled (`RTNUM1 = 1`) and the corresponding value must be populated in `RTSTR1`.
 
 ---

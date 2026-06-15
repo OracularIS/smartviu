@@ -46,6 +46,6 @@ Once logged in, you will have access to all the functionalities and tools SmartV
 
 To begin working with SmartViu, it is essential to set the necessary policies. 
 
-For policies setup click [here](./policysetup.md)
+For policies setup click [here](/policy/policysetup.md)
 
 ----
