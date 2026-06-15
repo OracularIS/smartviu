@@ -24,6 +24,6 @@ Simply type a question into the message box to instantly retrieve information an
         ondblclick="this.style.height='200px'; this.style.cursor='zoom-in';">
     </div>
 
-For Smart Assistant policies click [here](./policysetup.md) .
+For Smart Assistant policies click [here](/policy/assistant_policy.md) .
 
 ---
