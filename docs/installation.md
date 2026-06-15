@@ -16,13 +16,16 @@ Before beginning the installation, ensure that all of the following conditions a
 
 ## Installation Instructions
 
-### 1. Move the Rollout Contents
+1. **Deploy the Rollout Contents**
 
-Before copying the files, ensure you can identify the rollout folders for each 
-environment. 
+Before copying any files, identify the appropriate rollout directories for each target environment.
 
 The screenshots below show examples of the LES and REFS rollout 
 package structure.
+
+- **LES Rollout Package**
+
+The LES rollout package contains the backend deployment folders located under the pkg directory.
 
 <div style="text-align: left;">
   <img src="./Attachments/r1.png"
@@ -33,7 +36,10 @@ package structure.
        ondblclick="this.style.height='200px'; this.style.cursor='zoom-in';">
    </div>
 
-*The LES rollout package contains these backend folders in pkg.*
+
+- **REFS Rollout Package**
+
+The REFS rollout package contains the frontend/screen deployment folders located under the pkg directory.
 
 <div style="text-align: left;">
   <img src="./Attachments/r2.png"
@@ -44,7 +50,6 @@ package structure.
        ondblclick="this.style.height='200px'; this.style.cursor='zoom-in';">
    </div>
 
-*The REFS rollout package contains this frontend folder in pkg.*
 
 Copy the rollout package contents into the correct target directories for each environment:
 

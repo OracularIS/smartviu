@@ -9,7 +9,7 @@ This document provides a comprehensive guide to all the required policies, along
     - Enabling Smart Assitant
     - LLM Configuration Policies
 - [Policies for Security](/policy/security_policy.md)
-- [Policiy for Error Codes](/policy/error_policy.md)
+- [Policies for Error Codes](/policy/error_policy.md)
 - [Policies for Email Export](/policy/email_policy.md)
 
 ----
