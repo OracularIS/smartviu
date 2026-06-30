@@ -2,6 +2,19 @@
 
 To successfully enable and operate Smart Assistant within Smart VIU, the following policies and configurations must be ensured:
 
+
+| # | polcod        | polvar      | Policy Name   | Description                                                                                                             |
+| - | ------------- | ----------- | ------------- | ----------------------------------------------------------------------------------------------------------------------- |
+| 1 | USR-SMARTBASE | UC-APP-CONG | ENABLED       | Enables or disables the Smart Assistant feature.                    |
+| 2 | USR-SMARTBASE | UC-APP-CONG | SA-TENANT-KEY | Stores the tenant key (Tenant ID) used by Smart Assistant for tenant-specific configuration and authentication.         |
+| 3 | USR-SMARTBASE | UC-APP-CONG | SERVER_ID     | Specifies the Smart Apps Integration server connection ID used by Smart Assistant to communicate with backend services. |
+| 4 | USR-SMARTBASE | UC-APP-CONG | URL           | Defines the Smart Assistant service endpoint URL used to process AI requests.                                           |
+| 5 | USR-SMARTBASE | UC-APP-CONG | LLM_API_KEY   | Stores the API key used to authenticate requests to the client's Large Language Model (LLM) service.                    |
+| 6 | USR-SMARTBASE | UC-APP-CONG | LLM_BASE_URL  | Specifies the base URL of the client's LLM endpoint through which Smart Assistant routes AI requests.                   |
+| 7 | USR-SMARTBASE | UC-APP-CONG | LLM_MODEL     | Defines the LLM model that Smart Assistant uses to generate AI responses.                                               |
+| 8 | USR-SMARTBASE | UC-APP-CONG | LLM_PROVIDER  | Identifies the LLM provider (for example, OpenAI, Azure OpenAI, or another supported provider).                         |
+
+
 ## Enabling Smart Assistant 
 
 Following policies are used to enabled Smart Assiatant:
