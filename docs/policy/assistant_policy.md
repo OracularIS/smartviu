@@ -28,7 +28,7 @@ To enable or disable the Smart Assistant feature, configure the following policy
 | USR-SMARTBASE     | UC-APP-CONG   | ENABLED            |1  | 
 
   -  `rtnum1=1` → enabled (ON)
--  `rtnum=0` → disabled (OFF)
+-  `rtnum2=0` → disabled (OFF)
 
 ### Tenant Key Setup Policy
 
@@ -106,7 +106,6 @@ Defines the model that Smart Assistant will use for generating AI responses.
 | polcod | polvar | polval | rtstr1 |
 |---------|---------|---------|---------|
 | USR-SMARTBASE | UC-APP-CONG | LLM_MODEL |  LLM Model Name |
-    
 
 ### LLM_PROVIDER
 
