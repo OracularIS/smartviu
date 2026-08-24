@@ -7,6 +7,7 @@
   - [Policies for Security](./policy/security_policy.md)
   - [Policies for Error Codes](./policy/error_policy.md)
   - [Policy for Email Export](./policy/email_policy.md)
+  - [Policies for Snowflake](./policy/sf_policy.md)
 - [Architecture Overview](./architecture.md)
 - [SmartViu Bundle](./bundles.md)
   - [SmartViu Screen](./bundles/smartviuf/smartviu.md)
