@@ -1,4 +1,4 @@
-# Version 2026.1.3.0 – Bug Fixes & Code Improvements
+# Version 2026.1.3.0 – SmartViu & Command Maintenance Stability Fixes
 
 ## Release Notes
 
