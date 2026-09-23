@@ -3,7 +3,7 @@
 - [Getting Started](./GettingSmartViu.md)
 - [Installation Guide](./installation.md)
 - [Policy Setup](./policy/policysetup.md)
-  - [Policies for Smart Assitant](./policy/assistant_policy.md)
+  - [Policies for Smart Assistant](./policy/assistant_policy.md)
   - [Policies for Security](./policy/security_policy.md)
   - [Policies for Error Codes](./policy/error_policy.md)
   - [Policy for Email Export](./policy/email_policy.md)
