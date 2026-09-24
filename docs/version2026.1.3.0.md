@@ -9,5 +9,6 @@
 - **Command Maintenance Details Grid Fixes** – Fixed the details grid hiding after deleting a record in Command Maintenance.
 - **Command Maintenance Item Number Field Fix** – Fixed the Item Number field remaining visually locked after deselecting a record.
 - **Syntax Editor and SQL Formatter Fixes** – Fixed the syntax editor and SQL formatter failing to load in Command Maintenance.
+- **Send Email Feature** – Resolved issue where email sending failed when SMTP server policies weren't configured; it now automatically falls back to the default mail configuration instead of blocking the send.
 - **Outbound Request Security Fixes** – Improved security of outbound request handling.
 - **General Bug Fixes** – Minor code and bug fixes with improved code quality and refactoring.
