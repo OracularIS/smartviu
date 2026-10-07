@@ -2,7 +2,7 @@
 
 ## Release Notes
 
-- **Folder Structure Update** – Adopted a new naming convention for SmartViu modules.
+- **Naming Convention Update** – Renamed SmartViu modules and files to follow the new naming convention.
 - **Command Maintenance Fix** – Resolved issue where manually-typed **Report Group** values were not saving.
 - **Special Fields Loading Fix** – Added a loader that displays until the filter fields finish loading, instead of the screen appearing stuck with no feedback.
 - **Detail Grid Fix** – Resolved issue where an incorrect "Unable to load" error appeared on empty results.
