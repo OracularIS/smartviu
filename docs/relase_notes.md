@@ -14,6 +14,7 @@
 | **2026.1.2.0**   | [Bug Fixes & Code Improvements](/version2026.1.2.0.md) |
 | **2026.1.3.0**   | [SmartViu & Command Maintenance Stability Fixes](/version2026.1.3.0.md) |
 | **2026.1.3.2**   | [SmartViu Folder Restructure & Loading Fixes](/version2026.1.3.2.md) |
+| **2026.1.3.3**   | [Command Maintenance Rename & Detail Grid Fixes](/version2026.1.3.3.md) |
 
 
 
