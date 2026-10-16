@@ -1,158 +1,144 @@
-# Smart Viu Management Console
+# SmartViu Management Console
 
-The Smart Viu Management Console is a screen in the Smart MOCA Client. It lets you look up Smart Viu configuration stored in a MOCA environment (reports, custom columns and messages), review it in grids, and export it as CSV files. The files can be saved to a folder on your computer or sent straight to a MOCA server.
+## Overview
 
-The console only reads data. It never changes database rows. The only things it creates are the exported CSV files.
+The SmartViu Management Console is a utility in the Smart MOCA Client that allows developers and administrators to **view SmartViu metadata** stored in a MOCA environment. SmartViu metadata is the configuration data that defines SmartViu reports, custom columns and message text. The console retrieves this data from the environment's database, presents it in grids for review, and exports it as CSV files.
 
-| Tab | Use it to find | Tables shown |
+The console covers three areas of metadata, each on its own screen (tab):
+
+| Screen | Metadata area | Purpose |
 |---|---|---|
-| **Report** | A report and the records that define it | `usr_les_cmd`, `sys_dsc_mst`, `les_opt_ath`, `les_mnu_opt` |
-| **Custom Column** | A variable (custom column), its settings and lookups | `les_var_config`, `les_var_lkp`, `les_var_vp`, `les_lkp`, `les_lkp_fld` |
-| **Message Catalog** | Messages and their translations | `les_mls_cat` |
+| **Report** | SmartViu reports | Displays the records that define a report: its command, description, authorization and menu option |
+| **Custom Column** | Custom columns (variables) | Displays the configuration of a variable together with its lookups and lookup fields |
+| **Message Catalog** | Messages and translations | Displays catalog messages and their translated text by locale |
 
-## Before you start
+The console is read-only. It does not insert, update or delete database rows. The only artifacts it creates are the CSV files produced by an export.
 
-The console needs the real MOCA client library, **`moca.jar`**, in the application folder next to `mocadev.jar`. If it is missing, searches stop with the message *"bind variables do not match on this server"*.
+## Launching the SmartViu Management Console
 
-To add it, use either of these:
-
-1. Copy `moca.jar` from any server's `MOCA\lib` folder into the application folder, then restart the application.
-2. Connect to a server and choose **Tools > Download moca.jar**, then restart the application. This menu item appears only while `moca.jar` is not in use.
-
-You also need permission to read the tables listed above. To use **Export to Server**, you need permission to write files under the server's `$LESDIR`.
-
-## Opening the console
+The console is available from the **Addons** menu of the Smart MOCA Client and requires an active connection to a MOCA server.
 
 1. Connect to a MOCA server in the Smart MOCA Client.
-2. Choose **Addons > Smart Innovations > Smart Viu Management Console**.
+2. Select **Addons > Smart Innovations > Smart Viu Management Console**.
 
-![Smart Viu Management Console menu item](Attachments/smartviu-managment-console/SmartViuManagmentConsoleMenuitem.png)
+![SmartViu Management Console menu item](Attachments/smartviu-managment-console/SmartViuManagmentConsoleMenuitem.png)
 
-The console opens in its own window, on the server you are connected to.
+The console opens in its own window. The window title shows the name of the server in use, for example *Smart Viu Management Console - SMARTRPDEV*.
 
-## Features common to all screens
+### Selecting a Server
 
-* **Server list.** The list at the top chooses the server the console reads from and exports to. It starts on the server you are connected to. If you change it while results are on screen, the console asks for confirmation and then clears the results. The values you typed in the fields are kept.
-* **Several values in one field.** Where a field allows it, type values separated by commas. Spaces are ignored and repeated values are counted once. Most of these fields accept up to 100 values.
-* **Result tabs.** Each table has its own tab in the results area. After a search the tab title shows the row count, for example `usr_les_cmd (28)`.
-* **Select column.** The first column of every grid is a **Select** check box. It controls which rows are exported (see "Exporting data" below).
-* **Background work.** Searches and exports run in the background, so the window stays responsive.
-* **Errors.** If a query fails, a dialog lists the failed tables with the server's error text. The grids still show whatever could be read.
-* **Status bar.** The bottom of the window shows the current status, for example *Ready*.
+The **Server** list at the top of the window determines which MOCA server the console reads metadata from and exports to. It is preselected with the server to which the Smart MOCA Client is connected, and it also contains the servers saved in the client.
 
-## Report screen
+When you select a different server, the console connects to it, requesting login credentials if none are saved. If results are already displayed, the console asks you to confirm before it clears them. The values entered in the search fields are retained. If the connection cannot be established, the previous server and its results remain in place.
 
-Use this screen to find a report by its id or name and see the records that define it.
+## Report Screen
 
-![Report screen](Attachments/smartviu-managment-console/ReportScreenEmpty.png)
+The Report screen retrieves a SmartViu report and the records that define it. A report can be located by its identifier, by its name, or by both.
 
-### Fields
+![Report screen](Attachments/smartviu-managment-console/ReportscreenData.png)
 
-| Field | What to enter |
-|---|---|
-| **Report Id** | One or more report ids, separated by commas. Matches any id that *contains* the value |
-| **Report Name** | One or more report names, separated by commas. Matches any name that *contains* the value |
+### Search Fields
 
-Enter at least one of the two.
+| Field | Input | Description |
+|---|---|---|
+| **Report Id** | Multiple values | Identifier of the report. Compared with the report command identifier and the option name in the report tables |
+| **Report Name** | Multiple values | Name of the report, compared with the descriptive text in `sys_dsc_mst` |
+
+To search for more than one value in a field marked **Multiple values**, separate the values with commas, for example `UC-A, UC-B`. Spaces around a value and empty entries are ignored, a value entered more than once is applied once, and each field accepts up to 100 values.
 
 ### Buttons
 
-| Button | What it does |
+| Button | Description |
 |---|---|
-| **Fetch Report** (or Enter in a field) | Runs the search |
-| **Reset All** | Clears the Report Id and Report Name fields, puts the Custom Column and Message Catalog fields back to their defaults, and clears all results. The Server choice stays |
+| **Fetch Report** | Searches the report tables using the entered values |
+| **Reset All** | Clears the Report Id and Report Name fields, restores the default values on the Custom Column and Message Catalog screens, and clears all results. The selected server is not changed |
 
-### How it works
+### How It Works
 
-* **With a Report Id**, the console searches all four tables for that id. If a Report Name is also given, it only narrows the `sys_dsc_mst` results.
-* **With only a Report Name**, the console first finds matching rows in `sys_dsc_mst`, takes the report ids from them, and then looks those ids up in `usr_les_cmd`, `les_opt_ath` and `les_mnu_opt`.
+The results are displayed on four tabs, one for each of the tables `usr_les_cmd`, `sys_dsc_mst`, `les_opt_ath` and `les_mnu_opt`. Each tab title shows the number of rows retrieved.
 
-Characters such as `%` and `_` are treated as ordinary text, not wildcards.
+* **Report Id entered.** All four tables are searched for the entered identifier. If a **Report Name** is also entered, it further restricts the `sys_dsc_mst` results.
+* **Only Report Name entered.** The console first retrieves the matching `sys_dsc_mst` records and derives the report identifiers from them. It then retrieves the corresponding `usr_les_cmd`, `les_opt_ath` and `les_mnu_opt` records.
 
-### Result tabs
+## Custom Column Screen
 
-| Tab | Contains |
+The Custom Column screen retrieves the configuration of one or more variables, together with their lookups and lookup fields.
+
+![Custom Column screen](Attachments/smartviu-managment-console/CustomVariableData.png)
+
+### Search Fields
+
+| Field | Input | Default | Description |
+|---|---|---|---|
+| **Variable** | Multiple values (no 100-value limit) | Blank | Names of the variables to retrieve. This field must contain a value |
+| **Application ID** | Single value | `LES` | Application to which the variable belongs |
+| **Form ID** | Single value | `LES` | Form to which the variable belongs |
+| **Addon ID** | Single value | `LES` | Add-on to which the variable belongs |
+| **Customization Level** | Whole number | `10` | Customization level of the variable. A value that is not a whole number is ignored |
+| **Group Name** | Single value | Blank | Group to which the variable belongs |
+
+To retrieve more than one variable, enter the variable names in the **Variable** field separated by commas, for example `VAR_A, VAR_B`. Spaces around a name and empty entries are ignored, and a name entered more than once is applied once. After the search, the field displays the names as a cleaned, comma-separated list. All other fields on this screen accept a single value.
+
+### Buttons
+
+| Button | Description |
 |---|---|
-| `usr_les_cmd` | The report command: id, syntax, group name and run flags |
-| `sys_dsc_mst` | The report name and description text |
-| `les_opt_ath` | Which roles can use the report |
-| `les_mnu_opt` | The report's menu option |
+| **Search** | Searches the custom column tables using the entered values. Each search replaces the previous results |
 
-If nothing is found, the message *No rows found for "..."* is shown.
+### How It Works
 
-## Custom Column screen
+The results are displayed on five tabs, one for each of the tables `les_var_config`, `les_var_lkp`, `les_var_vp`, `les_lkp` and `les_lkp_fld`. Each tab title shows the number of rows retrieved.
 
-Use this screen to look up one or more variables (custom columns) with their settings and lookups.
+1. The console retrieves the records for the entered variable names from `les_var_config`, `les_var_lkp` and `les_var_vp`. The scope fields (Application ID, Form ID, Addon ID, Customization Level and Group Name) restrict these three tables.
+2. It collects the lookup identifiers found in `les_var_lkp` and `les_var_vp`.
+3. It retrieves the matching records from `les_lkp` and `les_lkp_fld`. The scope fields do not apply to these two tables.
 
-![Custom Column screen](Attachments/smartviu-managment-console/CustomColumnScreenEmpty.png)
+## Message Catalog Screen
 
-### Fields
+The Message Catalog screen retrieves messages from the message catalog and their translated text.
 
-| Field | Default | Notes |
-|---|---|---|
-| **Variable** | (blank) | One or more variable names, separated by commas. Required. Exact match |
-| **Application ID** | `LES` | Exact match |
-| **Form ID** | `LES` | Exact match |
-| **Addon ID** | `LES` | Exact match |
-| **Customization Level** | `10` | Must be a whole number, otherwise it is ignored |
-| **Group Name** | (blank) | Exact match |
+![Message Catalog screen](Attachments/smartviu-managment-console/MessageCatalogScreendata.png)
 
-A blank field is not used as a condition.
+### Search Fields
 
-### How it works
+| Field | Input | Default | Description |
+|---|---|---|---|
+| **Message ID** | Multiple values | Blank | Identifier of the message (`mls_id`) |
+| **MLS Text** | Multiple values | Blank | Message text (`mls_text`) |
+| **Locale ID** | Drop-down list | All | Locale of the translation. **All** retrieves messages for every locale |
+| **Product ID** | Multiple values | `LES` | Product to which the message belongs |
+| **Application ID** | Multiple values | `LES` | Application to which the message belongs |
+| **Form ID** | Multiple values | `LES` | Form to which the message belongs |
+| **Variation** | Multiple values | `LES` | Variation of the message |
+| **Customization Level** | Whole number | `10` | Customization level of the message. A value that is not a whole number is ignored |
 
-Click **Search** (or press Enter in the Variable field). The console reads the variable's configuration, its lookups and its value providers using the names and scope fields above. It then collects the lookup ids found and loads the matching lookup records and lookup fields. Each search replaces the previous results.
+To search for more than one value in a field marked **Multiple values**, separate the values with commas, for example `LES, WMD`. Spaces around a value and empty entries are ignored, a value entered more than once is applied once, and each field accepts up to 100 values. **Locale ID** and **Customization Level** accept a single value.
 
-### Result tabs
+The **Locale ID** list is populated from `locale_mst` on the selected server and is refreshed whenever the server changes. If the locales cannot be read, the list is replaced by a text box in which a locale identifier can be typed.
 
-| Tab | Contains |
+### Buttons
+
+| Button | Description |
 |---|---|
-| `les_var_config` | The variable's configuration |
-| `les_var_lkp` | Lookups attached to the variable |
-| `les_var_vp` | Value providers of the variable |
-| `les_lkp` | The lookup definitions used by the variable |
-| `les_lkp_fld` | The fields of those lookups |
+| **Search** | Searches the message catalog using the entered values |
 
-The Application ID, Form ID, Addon ID, Customization Level and Group Name fields apply to the first three tabs only. `les_lkp` and `les_lkp_fld` are found through the lookup ids.
+### How It Works
 
-## Message Catalog screen
+The console searches the `les_mls_cat` table using the entered values. The results are displayed on the **Message Catalog** tab, whose title shows the number of rows retrieved. The columns returned are `mls_id`, `locale_id`, `prod_id`, `appl_id`, `frm_id`, `vartn`, `cust_lvl`, `mls_text`, `grp_nam` and `is_purged`.
 
-Use this screen to search messages and their translations.
+## Exporting Data
 
-![Message Catalog screen](Attachments/smartviu-managment-console/MessageCatalogScreenempty.png)
+Every screen provides two export actions at the bottom of the window: **Export to Local** and **Export to Server**. Both export the results of the most recent search on that screen, so a search must be run first. They differ only in the destination of the files: **Export to Local** writes to a directory on the computer running the Smart MOCA Client, and **Export to Server** writes to the load directory of the selected MOCA server.
 
-### Fields
+### Selecting the Data to Export
 
-| Field | Default | Notes |
-|---|---|---|
-| **Message ID** | (blank) | Several values. *Contains* match |
-| **MLS Text** | (blank) | Several values. *Contains* match |
-| **Locale ID** | All | Drop-down filled from the server. **All** does not filter by locale |
-| **Product ID** | `LES` | Several values. Exact match |
-| **Application ID** | `LES` | Several values. Exact match |
-| **Form ID** | `LES` | Several values. Exact match |
-| **Variation** | `LES` | Several values. Exact match |
-| **Customization Level** | `10` | Whole number, otherwise it is ignored |
+* If one or more rows are selected in the **Select** column, only the selected rows are exported.
+* If no rows are selected, all rows on all result tabs of that screen are exported.
+* Tables with no rows to export are skipped.
 
-A blank field is not used as a condition. If the console cannot read the locale list from the server, the Locale ID drop-down becomes a text box where you can type a locale id.
+### Export Output
 
-### How it works
-
-Click **Search** (or press Enter in Message ID or MLS Text). The matching rows are shown in the **Message Catalog** result tab, with the row count in its title. If nothing is found, the message *No rows found in Message Catalog* is shown.
-
-## Exporting data
-
-Each screen has two buttons at the bottom: **Export to Local** and **Export to Server**. Run a search first. If there are no results, the console tells you to search first.
-
-### What gets exported
-
-* If you tick the **Select** check box on some rows, only the ticked rows are exported.
-* If no rows are ticked, all rows from all result tabs are exported.
-* Tables with no rows are skipped.
-
-### Folders and files
-
-Each table gets its own folder, `usr_smartviu_<table>`. Each exported row becomes one CSV file in that folder. The file name is made from the row's primary key values, joined with `__`.
+Both export actions produce CSV files. For each table, a folder named `usr_smartviu_<table>` is created, and each exported row is written as a separate file in that folder. The file name consists of the primary key values of the row, joined by `__`, followed by the `.csv` extension. Characters that are not valid in file names are replaced.
 
 ```
 usr_smartviu_usr_les_cmd/
@@ -161,43 +147,37 @@ usr_smartviu_sys_dsc_mst/
     les_cmd_id__UC_PRTMST_MNT-A-2_US_ENGLISH__10.csv
 ```
 
-If the console finds that two rows would get the same file name, it stops and writes nothing.
-
 ### Export to Local
 
-1. Click **Export to Local**.
-2. Choose a folder in the **Choose a directory** dialog.
-3. The table folders are created inside it. A message confirms how many tables were exported.
+**Export to Local** saves the metadata as files on the local machine, for example to keep a copy of a report definition or to move it by other means.
+
+1. Run a search and, optionally, select the rows to export.
+2. Click **Export to Local**.
+3. In the **Choose a directory** dialog, select the destination directory. The directory is remembered as the default tables directory of the application.
+
+The `usr_smartviu_<table>` folders are created inside the selected directory. When the export finishes, the console reports the number of tables exported and the destination directory.
 
 ### Export to Server
 
-1. Choose the target server in the **Server** list.
-2. Click **Export to Server**. No folder dialog appears.
-3. The files are uploaded to this folder on the server:
+**Export to Server** transfers the metadata directly to the selected MOCA server, without a local destination dialog.
 
-   `$LESDIR/db/data/load/base/bootstraponly/usr_smartviu_<table>/<file>.csv`
+1. Run a search and, optionally, select the rows to export.
+2. Confirm that the required server is selected in the **Server** list.
+3. Click **Export to Server**.
 
-4. A message confirms how many files were uploaded.
+The files are first created in a temporary folder on the local machine and then uploaded one at a time to the following location on the server. The `usr_smartviu_<table>` folder is created if it does not exist, and the temporary folder is deleted afterward.
 
-### Replacing existing files
+`$LESDIR/db/data/load/base/bootstraponly/usr_smartviu_<table>/<file>.csv`
 
-If any file already exists in the target folder, a **Replace existing files?** dialog shows how many files are affected and the first few names. Click the "... and N more" link to see the full list.
+This operation requires permission to write files under the server's `$LESDIR`. When the export finishes, the console reports the number of files and tables uploaded and the destination server.
 
-* **Yes** replaces the files.
-* **No** (the default) cancels the export and nothing is written.
+### Replacing Existing Files
 
-Each export is recorded in a log file at `%APPDATA%\SmartMOCAClient\logs\smartviu-file-replacement.0.log`, so you can check later what was replaced.
+Before writing, the console checks whether any of the files already exist in the destination, whether a local directory or the server. If so, it displays the **Replace existing files?** dialog, which shows the number of files, the destination and the first three file names. Select the "... and N more" link to view the complete list.
 
-## Common messages
+* **Yes** replaces the existing files.
+* **No** cancels the export. No files are written. This is the default option.
 
-| Message | What to do |
-|---|---|
-| Choose a server in the Server list first | Pick a server in the Server list |
-| Could not connect to `<server>` | Check the server and password, then try again |
-| Enter a Report Id or Report Name | Fill in at least one of the two fields |
-| Enter a Variable Name | Fill in the Variable field |
-| Enter at most 100 ... | Use fewer comma-separated values |
-| No rows found ... | Widen the search |
-| Some queries failed, so the data shown may be incomplete | Read the table name and error text listed in the dialog |
-| Bind variables do not match on this server | `moca.jar` is missing. Add it as described in "Before you start" and restart the application |
-| Export cancelled. No files were written | You chose **No** in the replace dialog. Run the export again and choose **Yes** |
+Each export is also recorded in the log file `%APPDATA%\SmartMOCAClient\logs\smartviu-file-replacement.0.log`, which can be used to review which files were created or replaced.
+
+**Note:** You also need permission to read the tables listed above. To use Export to Server, you need permission to write files under the server's `$LESDIR`.
