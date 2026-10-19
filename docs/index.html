@@ -39,6 +39,44 @@
       },
       plugins: [
         function(hook, vm) {
+          // Click-to-zoom for images. Registered in the capture phase so the
+          // body click handler below cannot swallow the event.
+          hook.init(function() {
+            var overlay = null;
+            function closeZoom() {
+              if (overlay) { overlay.remove(); overlay = null; }
+            }
+            document.addEventListener('keydown', function(e) {
+              if (e.key === 'Escape') closeZoom();
+            });
+            document.addEventListener('click', function(e) {
+              var t = e.target;
+              if (overlay && t === overlay) { closeZoom(); return; }
+              if (!t || t.tagName !== 'IMG' || !t.closest('.markdown-section') || t.hasAttribute('onclick')) return;
+              e.preventDefault();
+              e.stopPropagation();
+              closeZoom();
+              overlay = document.createElement('div');
+              overlay.style.cssText = 'position:fixed;inset:0;z-index:9999;background:rgba(0,0,0,.8);overflow:auto;cursor:zoom-out;display:flex;';
+              var img = document.createElement('img');
+              img.src = t.src;
+              img.alt = t.alt;
+              var fit = true;
+              function applyFit() {
+                img.style.cssText = fit
+                  ? 'max-width:95vw;max-height:95vh;margin:auto;cursor:zoom-in;background:#fff;'
+                  : 'max-width:none;margin:auto;cursor:zoom-out;background:#fff;';
+              }
+              applyFit();
+              img.addEventListener('click', function(ev) {
+                ev.stopPropagation();
+                fit = !fit;
+                applyFit();
+              });
+              overlay.appendChild(img);
+              document.body.appendChild(overlay);
+            }, true);
+          });
           hook.doneEach(function() {
                document.querySelectorAll('.sidebar-nav li').forEach(function(item) {
               item.addEventListener('click', function(event) {

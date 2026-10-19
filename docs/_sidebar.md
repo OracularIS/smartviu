@@ -35,5 +35,6 @@
   - [Controlling Menu Access](./usecases/menu.md)
 - [Smart Assistant Integration](./Assistant.md)
 - [Snowflake Integration](./snowflake.md)
+- [Smart Viu Management Console](./managementconsole.md)
 - [Release Updates](./relase_notes.md)
 - [SmartViu FAQ](./FAQ.md)
