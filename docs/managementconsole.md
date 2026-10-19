@@ -2,7 +2,7 @@
 
 ## Overview
 
-The SmartViu Management Console is a utility in the Smart MOCA Client that allows developers and administrators to **view SmartViu metadata** stored in a MOCA environment. SmartViu metadata is the configuration data that defines SmartViu reports, custom columns and message text. The console retrieves this data from the environment's database, presents it in grids for review, and exports it as CSV files.
+The SmartViu Management Console is a utility in the Smart MOCA Client that allows developers and administrators to **view SmartViu metadata** stored in a MOCA environment. SmartViu metadata is the configuration data that defines SmartViu reports, custom columns and messages. The console retrieves this data from the environment's database, Display it in grids for review, and exports it as CSV files.
 
 The console covers three areas of metadata, each on its own screen (tab):
 
@@ -19,7 +19,7 @@ The console is read-only. It does not insert, update or delete database rows. Th
 The console is available from the **Addons** menu of the Smart MOCA Client and requires an active connection to a MOCA server.
 
 1. Connect to a MOCA server in the Smart MOCA Client.
-2. Select **Addons > Smart Innovations > Smart Viu Management Console**.
+2. Select **Addons > Smart Innovations > SmartViu Management Console**.
 
 ![SmartViu Management Console menu item](Attachments/smartviu-managment-console/SmartViuManagmentConsoleMenuitem.png)
 
@@ -79,11 +79,6 @@ The Custom Column screen retrieves the configuration of one or more variables, t
 
 To retrieve more than one variable, enter the variable names in the **Variable** field separated by commas, for example `VAR_A, VAR_B`. Spaces around a name and empty entries are ignored, and a name entered more than once is applied once. After the search, the field displays the names as a cleaned, comma-separated list. All other fields on this screen accept a single value.
 
-### Buttons
-
-| Button | Description |
-|---|---|
-| **Search** | Searches the custom column tables using the entered values. Each search replaces the previous results |
 
 ### How It Works
 
@@ -116,11 +111,6 @@ To search for more than one value in a field marked **Multiple values**, separat
 
 The **Locale ID** list is populated from `locale_mst` on the selected server and is refreshed whenever the server changes. If the locales cannot be read, the list is replaced by a text box in which a locale identifier can be typed.
 
-### Buttons
-
-| Button | Description |
-|---|---|
-| **Search** | Searches the message catalog using the entered values |
 
 ### How It Works
 
@@ -128,7 +118,10 @@ The console searches the `les_mls_cat` table using the entered values. The resul
 
 ## Exporting Data
 
-Every screen provides two export actions at the bottom of the window: **Export to Local** and **Export to Server**. Both export the results of the most recent search on that screen, so a search must be run first. They differ only in the destination of the files: **Export to Local** writes to a directory on the computer running the Smart MOCA Client, and **Export to Server** writes to the load directory of the selected MOCA server.
+Every screen provides two export actions at the bottom of the window: **Export to Local** and **Export to Server**. Both export the results of the most recent search on that screen, so a search must be run first. They differ only in the destination of the files:
+
+* **Export to Local** writes to a directory on the computer running the Smart MOCA Client.
+* **Export to Server** writes to the load directory of the selected MOCA server.
 
 ### Selecting the Data to Export
 
@@ -142,9 +135,9 @@ Both export actions produce CSV files. For each table, a folder named `usr_smart
 
 ```
 usr_smartviu_usr_les_cmd/
-    UC_PRTMST_MNT-AS-2.csv
+    usr_ossi_ord.csv
 usr_smartviu_sys_dsc_mst/
-    les_cmd_id__UC_PRTMST_MNT-A-2_US_ENGLISH__10.csv
+    les_cmd_id__usr_ossi_ord-A-1__US_ENGLISH__10.csv
 ```
 
 ### Export to Local
