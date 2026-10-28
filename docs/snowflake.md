@@ -50,4 +50,6 @@ While SmartViu allows you to query Snowflake data seamlessly within your smartvi
 
 These capabilities ensure that your Snowflake environment is set up properly for use in SmartViu.
 
+For Snowflake policies click [here](/policy/sf_policy.md). 
+
 ---

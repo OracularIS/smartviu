@@ -20,7 +20,7 @@
       - [Add report to favorite](./bundles/smartviuf/favouritereport.md)
       - [Top Bar Menu Functions](./bundles/smartviuf/topbar.md)
 
-  - [OSSI - LES Command Maintenance](./bundles/lescmd/lescommand.md)
+  - [SmartViu Maintenance](./bundles/lescmd/lescommand.md)
     - [CRUD Functionality](./bundles/lescmd/crudfunctionality.md)
     - [LES Commands](./bundles/lescmd/writescript.md)
     - [Add new Field on screen](./bundles/lescmd/addnewfield.md)
@@ -35,6 +35,6 @@
   - [Controlling Menu Access](./usecases/menu.md)
 - [Smart Assistant Integration](./Assistant.md)
 - [Snowflake Integration](./snowflake.md)
-- [Smart Viu Management Console](./managementconsole.md)
+- [SmartViu Management Console](./managementconsole.md)
 - [Release Updates](./relase_notes.md)
 - [SmartViu FAQ](./FAQ.md)
