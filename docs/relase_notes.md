@@ -16,6 +16,7 @@
 | **2026.1.3.2**   | [SmartViu Folder Restructure & Loading Fixes](/version2026.1.3.2.md) |
 | **2026.1.3.3**   | [Command Maintenance Rename & Detail Grid Fixes](/version2026.1.3.3.md) |
 | **2026.1.3.4**   | [Snowflake Bug Fix](/version2026.1.3.4.md) |
+| **2026.1.3.5**   | [Report Title, Clear Button & Security Fixes](/version2026.1.3.5.md) |
 
 
 
